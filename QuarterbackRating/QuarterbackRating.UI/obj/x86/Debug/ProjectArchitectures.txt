@@ -1,0 +1,1 @@
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.UI\QuarterbackRating.csproj;x86
