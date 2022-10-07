@@ -18,9 +18,21 @@ namespace QuarterbackRating.Data
             new Quarterback {Id=5, Name="Justin Herbert", PassAttempts=166, PassCompletions=111, PassingYards=1250, Touchdowns=9, Interceptions=2, Rating=102.2M}
         };
 
+        public void Create(Quarterback quarterback)
+        {
+            quarterback.Id = _quarterbacks.Max(q => q.Id) + 1;
+            _quarterbacks.Add(quarterback);
+        }
+        
         public List<Quarterback> ReadAll()
         {
             return _quarterbacks;
+        }
+
+        public Quarterback ReadbyId(int id)
+        {
+            var quarterback = _quarterbacks.FirstOrDefault(q => q.Id == id);
+            return quarterback;
         }
     }
 }

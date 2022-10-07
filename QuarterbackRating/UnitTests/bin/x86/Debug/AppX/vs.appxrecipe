@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\UnitTests\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-10-07T12:58:17.865</Modified>
+      <Modified>2022-10-07T13:22:39.493</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\UnitTests\bin\x86\Debug\UnitTests.exe">
       <PackagePath>entrypoint\UnitTests.exe</PackagePath>
-      <Modified>2022-10-07T12:58:16.666</Modified>
+      <Modified>2022-10-07T13:22:38.830</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\QuarterbackRating.exe">
       <PackagePath>QuarterbackRating.exe</PackagePath>
-      <Modified>2022-10-07T12:57:44.849</Modified>
+      <Modified>2022-10-07T13:22:29.370</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\UnitTests\bin\x86\Debug\UnitTests.pdb">
       <PackagePath>UnitTests.pdb</PackagePath>
-      <Modified>2022-10-07T12:58:16.666</Modified>
+      <Modified>2022-10-07T13:22:38.830</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\QuarterbackRating.pdb">
       <PackagePath>QuarterbackRating.pdb</PackagePath>
-      <Modified>2022-10-07T12:57:44.849</Modified>
+      <Modified>2022-10-07T13:22:29.370</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\TestPlatform.Universal\16.0\References\CommonConfiguration\neutral\testhost.dll">
       <PackagePath>testhost.dll</PackagePath>
@@ -170,15 +170,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\UnitTests\bin\x86\Debug\UnitTestApp.xbf">
       <PackagePath>UnitTestApp.xbf</PackagePath>
-      <Modified>2022-10-07T12:57:55.022</Modified>
+      <Modified>2022-10-07T13:22:38.735</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-10-07T12:58:15.110</Modified>
+      <Modified>2022-10-07T13:22:29.238</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-10-07T12:58:15.110</Modified>
+      <Modified>2022-10-07T13:22:29.238</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -194,7 +194,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\UnitTests\bin\x86\Debug\Core\UnitTests.exe">
       <PackagePath>UnitTests.exe</PackagePath>
-      <Modified>2022-10-07T12:58:17.861</Modified>
+      <Modified>2022-10-07T13:22:39.487</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

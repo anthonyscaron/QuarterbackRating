@@ -24,5 +24,22 @@ namespace UnitTests
             Assert.AreEqual(4, quarterbacks[1].Interceptions);
             Assert.AreEqual(105.1M, quarterbacks[1].Rating);
         }
+
+        [TestMethod]
+        public void CanReadByIdQuarterback()
+        {
+            var id = 1;
+            var repo = new QuarterbackRepo();
+            var quarterback = repo.ReadbyId(id);
+
+            Assert.AreEqual(1, quarterback.Id);
+            Assert.AreEqual("Kirk Cousins", quarterback.Name);
+            Assert.AreEqual(157, quarterback.PassAttempts);
+            Assert.AreEqual(99, quarterback.PassCompletions);
+            Assert.AreEqual(1031, quarterback.PassingYards);
+            Assert.AreEqual(6, quarterback.Touchdowns);
+            Assert.AreEqual(4, quarterback.Interceptions);
+            Assert.AreEqual(84.1M, quarterback.Rating);
+        }
     }
 }
