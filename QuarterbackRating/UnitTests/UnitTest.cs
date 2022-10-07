@@ -2,6 +2,7 @@
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using QuarterbackRating.Data;
+using QuarterbackRating.Models;
 
 namespace UnitTests
 {
@@ -41,5 +42,17 @@ namespace UnitTests
             Assert.AreEqual(4, quarterback.Interceptions);
             Assert.AreEqual(84.1M, quarterback.Rating);
         }
+
+        /* [TestMethod]
+        public void CanCreateQuarterback()
+        {
+            var quarterback = new Quarterback();
+            quarterback.Name = "Jalen Hurts";
+            quarterback.PassAttempts = 123;
+            quarterback.PassCompletions = 82;
+            quarterback.PassingYards = 1120;
+            quarterback.Touchdowns = 4;
+            quarterback.Interceptions = 2;
+        } */
     }
 }
