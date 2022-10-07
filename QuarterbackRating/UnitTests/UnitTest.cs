@@ -3,6 +3,7 @@ using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using QuarterbackRating.Data;
 using QuarterbackRating.Models;
+using QuarterbackRating.Utility;
 
 namespace UnitTests
 {
@@ -54,5 +55,17 @@ namespace UnitTests
             quarterback.Touchdowns = 4;
             quarterback.Interceptions = 2;
         } */
+
+        [TestMethod]
+        public void CanCalculateWeightedCompletionPercentage()
+        {
+            var passCompletions = 324;
+            var passAttempts = 461;
+
+            var calc = new RatingCalculator();
+            var points = calc.CalculateWeightedCompletionPercentage(passCompletions, passAttempts);
+
+            Assert.AreEqual(2.014M, points);
+        }
     }
 }

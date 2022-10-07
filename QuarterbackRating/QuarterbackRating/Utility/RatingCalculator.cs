@@ -8,9 +8,27 @@ namespace QuarterbackRating.Utility
 {
     public class RatingCalculator
     {
-        public decimal CalculateWeightedCompletionPercentage()
+        public decimal CalculateWeightedCompletionPercentage(int passCompletions, int passAttempts)
         {
-            throw new Exception();
+            var completions = Convert.ToDecimal(passCompletions);
+            var attempts = Convert.ToDecimal(passAttempts);
+            var points = 0.0M;
+            points = (completions / attempts) * 100;
+            points -= 30;
+            points = points * 0.05M;
+
+            if (points < 0)
+            {
+                points = 0;
+            }
+            else if (points > 2.375M)
+            {
+                points = 2.375M;
+            }
+
+            points = Decimal.Round(points, 3);
+
+            return points;
         }
 
         public decimal CalculateWeightedYardsPerAttempt()
