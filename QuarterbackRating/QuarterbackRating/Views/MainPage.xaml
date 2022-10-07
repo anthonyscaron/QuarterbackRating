@@ -9,37 +9,61 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid Background="#FF303030">
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
+            <RowDefinition Height="5"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="5"/>
             <RowDefinition Height="100" />
         </Grid.RowDefinitions>
 
+        <Rectangle Grid.Row="0" Fill="#4F2683"/>
         <TextBlock Grid.Row="0" 
                    Name="Header"
                    FontSize="24"
-                   Foreground="Red"
+                   Foreground="#FFC62F"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
                    FontWeight="Bold"
-                   Text="QuarterBack Rating"/>
-        
-        <GridView Grid.Row="1" ItemsSource="{x:Bind Quarterbacks}" IsItemClickEnabled="True" ItemClick="GridView_ItemClick">
-            <GridView.ItemTemplate>
-                <DataTemplate x:DataType="data:Quarterback">
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-                        <StackPanel Margin="20,20,0,0">
-                            <TextBlock FontSize="16" Text="{x:Bind Name}" HorizontalAlignment="Left"/>
-                            <TextBlock FontSize="10" Text="{x:Bind Rating}" HorizontalAlignment="left"/>
+                   Text="Quarterback Rating"
+        />
+
+        <Rectangle Grid.Row="1" Fill="#FFC62F"/>
+
+        <Grid Grid.Row="2">
+            <ListView ItemsSource="{x:Bind Quarterbacks}" HorizontalAlignment="Center" >
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="Margin" Value="0,20,0,0"/>
+                        <Setter Property="Padding" Value="300,25,300,25"/>
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="data:Quarterback" >
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel>
+                                <TextBlock FontSize="20" Text="{x:Bind Name}" />
+                                <TextBlock FontSize="16" Text="{x:Bind Rating}" />
+                            </StackPanel>
                         </StackPanel>
-                    </StackPanel>
-                </DataTemplate>
-            </GridView.ItemTemplate>
-        </GridView>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+
+        <Rectangle Grid.Row="3" Fill="#FFC62F"/>
         
-        <TextBlock Grid.Row="2" 
-                   Name="ResultTextBlock"
+        <Rectangle Grid.Row="4" Fill="#4F2683"/>
+        <TextBlock Grid.Row="4" 
+                   Name="MainFooter"
                    FontSize="24"
-                   Foreground="Red"
-                   FontWeight="Bold"/>
+                   Foreground="#FFC62F"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   FontWeight="Bold"
+                   Text="Add a New Rating"
+        />
+        
     </Grid>
 </Page>

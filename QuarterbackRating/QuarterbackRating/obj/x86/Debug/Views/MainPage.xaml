@@ -9,38 +9,62 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid Background="#FF303030">
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
+            <RowDefinition Height="5"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="5"/>
             <RowDefinition Height="100" />
         </Grid.RowDefinitions>
 
+        <Rectangle Grid.Row="0" Fill="#4F2683"/>
         <TextBlock x:ConnectionId='2' Grid.Row="0" 
                    Name="Header"
                    FontSize="24"
-                   Foreground="Red"
+                   Foreground="#FFC62F"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
                    FontWeight="Bold"
-                   Text="QuarterBack Rating"/>
-        
-        <GridView x:ConnectionId='3' Grid.Row="1"                                     IsItemClickEnabled="True"                               >
-            <GridView.ItemTemplate>
-                <DataTemplate                              >
-                    <StackPanel x:ConnectionId='6' Orientation="Horizontal" HorizontalAlignment="Left">
-                        <StackPanel Margin="20,20,0,0">
-                            <TextBlock x:ConnectionId='7' FontSize="16"                      HorizontalAlignment="Left"/>
-                            <TextBlock x:ConnectionId='8' FontSize="10"                        HorizontalAlignment="left"/>
+                   Text="Quarterback Rating"
+        />
+
+        <Rectangle Grid.Row="1" Fill="#FFC62F"/>
+
+        <Grid Grid.Row="2">
+            <ListView x:ConnectionId='4'                                     HorizontalAlignment="Center" >
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="Margin" Value="0,5,0,5"/>
+                        <Setter Property="Padding" Value="100,25,100,25"/>
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.ItemTemplate>
+                    <DataTemplate                               >
+                        <StackPanel x:ConnectionId='6' Orientation="Horizontal">
+                            <StackPanel>
+                                <TextBlock x:ConnectionId='7' FontSize="20"                      />
+                                <TextBlock x:ConnectionId='8' FontSize="16"                        />
+                            </StackPanel>
                         </StackPanel>
-                    </StackPanel>
-                </DataTemplate>
-            </GridView.ItemTemplate>
-        </GridView>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+
+        <Rectangle Grid.Row="3" Fill="#FFC62F"/>
         
-        <TextBlock x:ConnectionId='4' Grid.Row="2" 
-                   Name="ResultTextBlock"
+        <Rectangle Grid.Row="4" Fill="#4F2683"/>
+        <TextBlock x:ConnectionId='3' Grid.Row="4" 
+                   Name="MainFooter"
                    FontSize="24"
-                   Foreground="Red"
-                   FontWeight="Bold"/>
+                   Foreground="#FFC62F"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   FontWeight="Bold"
+                   Text="Add a New Rating"
+        />
+        
     </Grid>
 </Page>
 

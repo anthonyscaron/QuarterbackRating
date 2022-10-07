@@ -32,11 +32,5 @@ namespace QuarterbackRating
             var repo = new QuarterbackRepo();
             Quarterbacks = repo.ReadAll();
         }
-
-        private void GridView_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            var quarterback = (Quarterback)e.ClickedItem;
-            ResultTextBlock.Text = "You selected " + quarterback.Name;
-        }
     }
 }
