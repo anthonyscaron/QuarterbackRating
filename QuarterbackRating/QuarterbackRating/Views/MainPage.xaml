@@ -32,11 +32,25 @@
         <Rectangle Grid.Row="1" Fill="#FFC62F"/>
 
         <Grid Grid.Row="2">
-            <ListView ItemsSource="{x:Bind Quarterbacks}" HorizontalAlignment="Center" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <TextBlock
+                   Name="Current"
+                   FontSize="20"
+                   Foreground="#FFC62F"
+                   HorizontalAlignment="Center"
+                   FontWeight="Bold"
+                   Margin="0,20,0,0"
+                   Text="Current Quarterbacks"
+            />
+
+            <ListView Grid.Row="1" Name="QuarterbacksView" ItemsSource="{x:Bind Quarterbacks}" HorizontalAlignment="Center" IsItemClickEnabled="True" ItemClick="QuarterbacksView_ItemClick">
                 <ListView.ItemContainerStyle>
                     <Style TargetType="ListViewItem">
                         <Setter Property="Margin" Value="0,20,0,0"/>
-                        <Setter Property="Padding" Value="300,25,300,25"/>
                     </Style>
                 </ListView.ItemContainerStyle>
                 <ListView.ItemTemplate>
@@ -44,7 +58,6 @@
                         <StackPanel Orientation="Horizontal">
                             <StackPanel>
                                 <TextBlock FontSize="20" Text="{x:Bind Name}" />
-                                <TextBlock FontSize="16" Text="{x:Bind Rating}" />
                             </StackPanel>
                         </StackPanel>
                     </DataTemplate>

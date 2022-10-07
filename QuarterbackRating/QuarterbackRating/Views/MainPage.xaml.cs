@@ -32,5 +32,10 @@ namespace QuarterbackRating
             var repo = new QuarterbackRepo();
             Quarterbacks = repo.ReadAll();
         }
+
+        private void QuarterbacksView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Details));
+        }
     }
 }

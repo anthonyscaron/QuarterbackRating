@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-10-07T18:55:59.925</Modified>
+      <Modified>2022-10-07T19:59:47.250</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\QuarterbackRating.exe">
       <PackagePath>entrypoint\QuarterbackRating.exe</PackagePath>
-      <Modified>2022-10-07T18:55:59.270</Modified>
+      <Modified>2022-10-07T19:59:46.393</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\antho\.nuget\packages\nunit\3.13.3\lib\netstandard2.0\nunit.framework.dll">
       <PackagePath>nunit.framework.dll</PackagePath>
@@ -90,15 +90,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\QuarterbackRating.xr.xml">
       <PackagePath>QuarterbackRating.xr.xml</PackagePath>
-      <Modified>2022-10-07T18:55:59.073</Modified>
+      <Modified>2022-10-07T19:56:29.096</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-10-07T17:30:54.598</Modified>
+      <Modified>2022-10-07T19:49:54.206</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Views\Details.xbf">
+      <PackagePath>Views\Details.xbf</PackagePath>
+      <Modified>2022-10-07T19:59:46.276</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Views\MainPage.xbf">
       <PackagePath>Views\MainPage.xbf</PackagePath>
-      <Modified>2022-10-07T18:55:59.079</Modified>
+      <Modified>2022-10-07T19:59:46.276</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -106,11 +110,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-10-07T16:26:48.334</Modified>
+      <Modified>2022-10-07T19:59:46.596</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Core\QuarterbackRating.exe">
       <PackagePath>QuarterbackRating.exe</PackagePath>
-      <Modified>2022-10-07T18:55:59.920</Modified>
+      <Modified>2022-10-07T19:59:47.243</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

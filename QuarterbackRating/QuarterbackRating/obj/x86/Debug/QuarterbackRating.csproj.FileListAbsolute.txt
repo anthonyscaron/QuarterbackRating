@@ -44,3 +44,8 @@ C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Deb
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\Views\MainPage.xaml
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\Views\MainPage.xbf
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Views\MainPage.xbf
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Views\Details.xbf
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\Views\Details.g.i.cs
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\Views\Details.g.cs
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\Views\Details.xaml
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\Views\Details.xbf
