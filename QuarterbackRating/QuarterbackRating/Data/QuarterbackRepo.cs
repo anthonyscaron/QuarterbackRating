@@ -1,4 +1,5 @@
 ﻿using QuarterbackRating.Models;
+using QuarterbackRating.Utility;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,10 @@ namespace QuarterbackRating.Data
 
         public void Create(Quarterback quarterback)
         {
+            var calc = new RatingCalculator();
+            
             quarterback.Id = _quarterbacks.Max(q => q.Id) + 1;
+            quarterback.Rating = calc.CalculateRating(quarterback);
             _quarterbacks.Add(quarterback);
         }
         

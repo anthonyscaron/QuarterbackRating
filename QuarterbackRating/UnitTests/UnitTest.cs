@@ -16,7 +16,9 @@ namespace UnitTests
             var repo = new QuarterbackRepo();
             var quarterbacks = repo.ReadAll();
 
-            Assert.AreEqual(5, quarterbacks.Count);
+            // The count for the Repo will be 6 instead of 5 because tests happen
+            // alphabetically so the CanCreateQuarterback will have added a 6th QB.
+            Assert.AreEqual(6, quarterbacks.Count);
             Assert.AreEqual(2, quarterbacks[1].Id);
             Assert.AreEqual("Lamar Jackson", quarterbacks[1].Name);
             Assert.AreEqual(117, quarterbacks[1].PassAttempts);
@@ -44,7 +46,7 @@ namespace UnitTests
             Assert.AreEqual(84.1M, quarterback.Rating);
         }
 
-        /* [TestMethod]
+        [TestMethod]
         public void CanCreateQuarterback()
         {
             var quarterback = new Quarterback();
@@ -54,7 +56,22 @@ namespace UnitTests
             quarterback.PassingYards = 1120;
             quarterback.Touchdowns = 4;
             quarterback.Interceptions = 2;
-        } */
+
+            var repo = new QuarterbackRepo();
+            repo.Create(quarterback);
+
+            var quarterbacks = repo.ReadAll();
+
+            Assert.AreEqual(6, quarterbacks.Count);
+            Assert.AreEqual(6, quarterbacks[5].Id);
+            Assert.AreEqual("Jalen Hurts", quarterbacks[5].Name);
+            Assert.AreEqual(123, quarterbacks[5].PassAttempts);
+            Assert.AreEqual(82, quarterbacks[5].PassCompletions);
+            Assert.AreEqual(1120, quarterbacks[5].PassingYards);
+            Assert.AreEqual(4, quarterbacks[5].Touchdowns);
+            Assert.AreEqual(2, quarterbacks[5].Interceptions);
+            Assert.AreEqual(99.6M, quarterbacks[5].Rating);
+        }
 
         [TestMethod]
         public void CanCalculateWeightedCompletionPercentage()
