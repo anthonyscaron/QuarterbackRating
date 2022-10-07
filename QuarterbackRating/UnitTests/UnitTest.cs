@@ -67,5 +67,17 @@ namespace UnitTests
 
             Assert.AreEqual(2.014M, points);
         }
+
+        [TestMethod]
+        public void CanCalculateWeightedYardsPerAttempt()
+        {
+            var passingYards = 3969;
+            var passAttempts = 461;
+
+            var calc = new RatingCalculator();
+            var points = calc.CalculateWeightedYardsPerAttempt(passingYards, passAttempts);
+
+            Assert.AreEqual(1.402M, points);
+        }
     }
 }

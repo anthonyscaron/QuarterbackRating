@@ -31,9 +31,27 @@ namespace QuarterbackRating.Utility
             return points;
         }
 
-        public decimal CalculateWeightedYardsPerAttempt()
+        public decimal CalculateWeightedYardsPerAttempt(int passingYards, int passAttempts)
         {
-            throw new Exception();
+            var yards = Convert.ToDecimal(passingYards);
+            var attempts = Convert.ToDecimal(passAttempts);
+            var points = 0.0M;
+            points = yards / attempts;
+            points -= 3;
+            points = points * 0.25M;
+
+            if (points < 0)
+            {
+                points = 0;
+            }
+            else if (points > 2.375M)
+            {
+                points = 2.375M;
+            }
+
+            points = Decimal.Round(points, 3);
+
+            return points;
         }
 
         public decimal CalculateWeightedPercentageOfTouchdownPasses()
