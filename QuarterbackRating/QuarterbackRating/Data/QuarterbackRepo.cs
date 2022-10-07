@@ -38,5 +38,14 @@ namespace QuarterbackRating.Data
             var quarterback = _quarterbacks.FirstOrDefault(q => q.Id == id);
             return quarterback;
         }
+
+        public void Update(Quarterback quarterback)
+        {
+            var calc = new RatingCalculator();
+            
+            var quarterbackToUpdate = _quarterbacks.FirstOrDefault(q => q.Id == quarterback.Id);
+            quarterback.Rating = calc.CalculateRating(quarterback);
+            quarterbackToUpdate = quarterback;
+        }
     }
 }

@@ -11,6 +11,33 @@ namespace UnitTests
     public class UnitTest
     {
         [TestMethod]
+        public void CanCreateQuarterback()
+        {
+            var quarterback = new Quarterback();
+            quarterback.Name = "Jalen Hurts";
+            quarterback.PassAttempts = 123;
+            quarterback.PassCompletions = 82;
+            quarterback.PassingYards = 1120;
+            quarterback.Touchdowns = 4;
+            quarterback.Interceptions = 2;
+
+            var repo = new QuarterbackRepo();
+            repo.Create(quarterback);
+
+            var quarterbacks = repo.ReadAll();
+
+            Assert.AreEqual(6, quarterbacks.Count);
+            Assert.AreEqual(6, quarterbacks[5].Id);
+            Assert.AreEqual("Jalen Hurts", quarterbacks[5].Name);
+            Assert.AreEqual(123, quarterbacks[5].PassAttempts);
+            Assert.AreEqual(82, quarterbacks[5].PassCompletions);
+            Assert.AreEqual(1120, quarterbacks[5].PassingYards);
+            Assert.AreEqual(4, quarterbacks[5].Touchdowns);
+            Assert.AreEqual(2, quarterbacks[5].Interceptions);
+            Assert.AreEqual(99.6M, quarterbacks[5].Rating);
+        }
+
+        [TestMethod]
         public void CanReadAllQuarterbacks()
         {
             var repo = new QuarterbackRepo();
@@ -47,30 +74,30 @@ namespace UnitTests
         }
 
         [TestMethod]
-        public void CanCreateQuarterback()
+        public void CanUpdateQuarterback()
         {
-            var quarterback = new Quarterback();
-            quarterback.Name = "Jalen Hurts";
-            quarterback.PassAttempts = 123;
-            quarterback.PassCompletions = 82;
-            quarterback.PassingYards = 1120;
-            quarterback.Touchdowns = 4;
-            quarterback.Interceptions = 2;
-
             var repo = new QuarterbackRepo();
-            repo.Create(quarterback);
 
-            var quarterbacks = repo.ReadAll();
+            var originalQuarterback = repo.ReadbyId(1);
+            var updatedQuarterback = originalQuarterback;
+            updatedQuarterback.PassAttempts = 461;
+            updatedQuarterback.PassCompletions = 324;
+            updatedQuarterback.PassingYards = 3969;
+            updatedQuarterback.Touchdowns = 35;
+            updatedQuarterback.Interceptions = 10;
 
-            Assert.AreEqual(6, quarterbacks.Count);
-            Assert.AreEqual(6, quarterbacks[5].Id);
-            Assert.AreEqual("Jalen Hurts", quarterbacks[5].Name);
-            Assert.AreEqual(123, quarterbacks[5].PassAttempts);
-            Assert.AreEqual(82, quarterbacks[5].PassCompletions);
-            Assert.AreEqual(1120, quarterbacks[5].PassingYards);
-            Assert.AreEqual(4, quarterbacks[5].Touchdowns);
-            Assert.AreEqual(2, quarterbacks[5].Interceptions);
-            Assert.AreEqual(99.6M, quarterbacks[5].Rating);
+            repo.Update(updatedQuarterback);
+
+            var quarterback = repo.ReadbyId(1);
+
+            Assert.AreEqual(1, quarterback.Id);
+            Assert.AreEqual("Kirk Cousins", quarterback.Name);
+            Assert.AreEqual(461, quarterback.PassAttempts);
+            Assert.AreEqual(324, quarterback.PassCompletions);
+            Assert.AreEqual(3969, quarterback.PassingYards);
+            Assert.AreEqual(35, quarterback.Touchdowns);
+            Assert.AreEqual(10, quarterback.Interceptions);
+            Assert.AreEqual(112.8M, quarterback.Rating);
         }
 
         [TestMethod]
