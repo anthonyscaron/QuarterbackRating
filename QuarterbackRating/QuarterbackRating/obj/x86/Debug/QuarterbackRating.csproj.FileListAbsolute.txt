@@ -1,5 +1,4 @@
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\App.xbf
-C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\MainPage.xbf
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\QuarterbackRating.xr.xml
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\QuarterbackRating.exe
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\QuarterbackRating.pdb
@@ -14,13 +13,9 @@ C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Deb
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\QuarterbackRating.csproj.AssemblyReference.cache
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\App.g.i.cs
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\App.g.cs
-C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\MainPage.g.i.cs
-C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\MainPage.g.cs
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\XamlTypeInfo.g.cs
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\App.xaml
-C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\MainPage.xaml
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\App.xbf
-C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\MainPage.xbf
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\XamlSaveStateFile.xml
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\QuarterbackRating.csproj.CoreCompileInputs.cache
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\QuarterbackRating.csproj.CopyComplete
@@ -44,3 +39,8 @@ C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Deb
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\ProjectArchitectures.txt
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424995200000000.json
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\Views\MainPage.g.i.cs
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\Views\MainPage.g.cs
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\Views\MainPage.xaml
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\Views\MainPage.xbf
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Views\MainPage.xbf
