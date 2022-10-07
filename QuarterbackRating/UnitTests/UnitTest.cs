@@ -79,5 +79,29 @@ namespace UnitTests
 
             Assert.AreEqual(1.402M, points);
         }
+
+        [TestMethod]
+        public void CanCalculateWeightedPercentageOfTouchdownPasses()
+        {
+            var touchdowns = 35;
+            var passAttempts = 461;
+
+            var calc = new RatingCalculator();
+            var points = calc.CalculateWeightedPercentageOfTouchdownPasses(touchdowns, passAttempts);
+
+            Assert.AreEqual(1.518M, points);
+        }
+
+        [TestMethod]
+        public void CanCalculateWeightedPercentageOfInterceptions()
+        {
+            var touchdowns = 10;
+            var passAttempts = 461;
+
+            var calc = new RatingCalculator();
+            var points = calc.CalculateWeightedPercentageOfInterceptions(touchdowns, passAttempts);
+
+            Assert.AreEqual(1.833M, points);
+        }
     }
 }

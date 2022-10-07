@@ -54,14 +54,41 @@ namespace QuarterbackRating.Utility
             return points;
         }
 
-        public decimal CalculateWeightedPercentageOfTouchdownPasses()
+        public decimal CalculateWeightedPercentageOfTouchdownPasses(int touchdowns, int passAttempts)
         {
-            throw new Exception();
+            var tds = Convert.ToDecimal(touchdowns);
+            var attempts = Convert.ToDecimal(passAttempts);
+            var points = 0.0M;
+            points = (tds / attempts) * 100;
+            points = points * 0.2M;
+
+            if (points > 2.375M)
+            {
+                points = 2.375M;
+            }
+
+            points = Decimal.Round(points, 3);
+
+            return points;
         }
 
-        public decimal CalculateWeightedPercentageOfInterceptions()
+        public decimal CalculateWeightedPercentageOfInterceptions(int interceptions, int passAttempts)
         {
-            throw new Exception();
+            var ints = Convert.ToDecimal(interceptions);
+            var attempts = Convert.ToDecimal(passAttempts);
+            var points = 0.0M;
+            points = (ints / attempts) * 100;
+            points = points * 0.25M;
+            points = 2.375M - points;
+
+            if (points < 0)
+            {
+                points = 0;
+            }
+
+            points = Decimal.Round(points, 3);
+
+            return points;
         }
 
         public decimal CalculateRating()
