@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuarterbackRating.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -91,9 +92,19 @@ namespace QuarterbackRating.Utility
             return points;
         }
 
-        public decimal CalculateRating()
+        public decimal CalculateRating(Quarterback quarterback)
         {
-            throw new Exception();
+            var compPoints = CalculateWeightedCompletionPercentage(quarterback.PassCompletions, quarterback.PassAttempts);
+            var yardPoints = CalculateWeightedYardsPerAttempt(quarterback.PassingYards, quarterback.PassAttempts);
+            var tdPoints = CalculateWeightedPercentageOfTouchdownPasses(quarterback.Touchdowns, quarterback.PassAttempts);
+            var intPoints = CalculateWeightedPercentageOfInterceptions(quarterback.Interceptions, quarterback.PassAttempts);
+            var finalPoints = 0.0M;
+            finalPoints = compPoints + yardPoints + tdPoints + intPoints;
+            finalPoints = (finalPoints / 6) * 100;
+
+            finalPoints = Decimal.Round(finalPoints, 1);
+
+            return finalPoints;
         }
     }
 }

@@ -103,5 +103,22 @@ namespace UnitTests
 
             Assert.AreEqual(1.833M, points);
         }
+
+        [TestMethod]
+        public void CanCalculateRating()
+        {
+            var quarterback = new Quarterback();
+            quarterback.Name = "Steve Young";
+            quarterback.PassAttempts = 461;
+            quarterback.PassCompletions = 324;
+            quarterback.PassingYards = 3969;
+            quarterback.Touchdowns = 35;
+            quarterback.Interceptions = 10;
+
+            var calc = new RatingCalculator();
+            quarterback.Rating = calc.CalculateRating(quarterback);
+
+            Assert.AreEqual(112.8M, quarterback.Rating);
+        }
     }
 }
