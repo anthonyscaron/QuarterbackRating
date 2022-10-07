@@ -43,9 +43,7 @@ namespace UnitTests
             var repo = new QuarterbackRepo();
             var quarterbacks = repo.ReadAll();
 
-            // The count for the Repo will be 6 instead of 5 because tests happen
-            // alphabetically so the CanCreateQuarterback will have added a 6th QB.
-            Assert.AreEqual(6, quarterbacks.Count);
+            Assert.AreEqual(5, quarterbacks.Count);
             Assert.AreEqual(2, quarterbacks[1].Id);
             Assert.AreEqual("Lamar Jackson", quarterbacks[1].Name);
             Assert.AreEqual(117, quarterbacks[1].PassAttempts);
@@ -98,6 +96,23 @@ namespace UnitTests
             Assert.AreEqual(35, quarterback.Touchdowns);
             Assert.AreEqual(10, quarterback.Interceptions);
             Assert.AreEqual(112.8M, quarterback.Rating);
+        }
+
+        [TestMethod]
+        public void CanDeleteQuarterback()
+        {
+            var repo = new QuarterbackRepo();
+            var quarterback = repo.ReadbyId(6);
+
+            Assert.IsNotNull(quarterback);
+
+            repo.Delete(quarterback);
+
+            var quarterbacks = repo.ReadAll();
+            quarterback = repo.ReadbyId(6);
+
+            Assert.AreEqual(5,quarterbacks.Count);
+            Assert.IsNull(quarterback);
         }
 
         [TestMethod]

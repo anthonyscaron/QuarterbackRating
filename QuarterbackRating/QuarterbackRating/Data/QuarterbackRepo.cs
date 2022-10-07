@@ -47,5 +47,11 @@ namespace QuarterbackRating.Data
             quarterback.Rating = calc.CalculateRating(quarterback);
             quarterbackToUpdate = quarterback;
         }
+
+        public void Delete(Quarterback quarterback)
+        {
+            var quarterbackToDelete = _quarterbacks.FirstOrDefault(q => q.Id == quarterback.Id);
+            _quarterbacks.Remove(quarterbackToDelete);
+        }
     }
 }
