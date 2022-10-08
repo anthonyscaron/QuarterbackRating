@@ -55,7 +55,6 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Text" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="MinWidth" />
       <RootProperty Name="MaxWidth" />

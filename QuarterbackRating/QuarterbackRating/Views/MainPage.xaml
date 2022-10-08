@@ -51,18 +51,23 @@
                 <ListView.ItemContainerStyle>
                     <Style TargetType="ListViewItem">
                         <Setter Property="Margin" Value="0,20,0,0"/>
+                        <Setter Property="Padding" Value="0,0,0,0"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                        <Setter Property="VerticalContentAlignment" Value="Stretch"/>
                     </Style>
                 </ListView.ItemContainerStyle>
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="data:Quarterback" >
-                        <Button Name="DetailsForward"
+                        <Button Name="{x:Bind Id}"
                                 FontSize="20"
+                                Width="Auto"
+                                Height="Auto"
                                 VerticalAlignment="Stretch"
                                 HorizontalAlignment="Stretch"
-                                HorizontalContentAlignment="Stretch"
-                                VerticalContentAlignment="Stretch"
-                                Background="red"
+                                HorizontalContentAlignment="Center"
+                                VerticalContentAlignment="Center"
                                 Foreground="White"
+                                Background="#FF303030"
                                 Content="{x:Bind Name}"
                                 Click="DetailsForward_Click"/>
                     </DataTemplate>

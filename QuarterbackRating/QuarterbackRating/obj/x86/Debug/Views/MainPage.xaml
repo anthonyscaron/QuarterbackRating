@@ -55,7 +55,7 @@
                 </ListView.ItemContainerStyle>
                 <ListView.ItemTemplate>
                     <DataTemplate                               >
-                        <Button x:ConnectionId='7' Name="DetailsForward"
+                        <Button x:ConnectionId='7'                   
                                 FontSize="20"
                                 VerticalAlignment="Stretch"
                                 HorizontalAlignment="Stretch"

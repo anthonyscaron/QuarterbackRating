@@ -35,19 +35,9 @@ namespace QuarterbackRating.Views
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            base.OnNavigatedTo(e);
-            
-            var name = (string)e.Parameter;
-            var quarterbacks = repo.ReadAll();
-            var quarterback = quarterbacks.FirstOrDefault(q => q.Name == name);
-            Quarterback.Id = quarterback.Id;
-            Quarterback.Name = quarterback.Name;
-            Quarterback.Rating = quarterback.Rating;
-            Quarterback.PassAttempts = quarterback.PassAttempts;
-            Quarterback.PassCompletions = quarterback.PassCompletions;
-            Quarterback.PassingYards = quarterback.PassingYards;
-            Quarterback.Touchdowns = quarterback.Touchdowns;
-            Quarterback.Interceptions = quarterback.Interceptions;
+            var parameter = (string)e.Parameter;
+            var id = Int32.Parse(parameter);
+            Quarterback = repo.ReadbyId(id);
         }
     }
 }

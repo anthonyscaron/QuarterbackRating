@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QuarterbackRating.Data;
+using QuarterbackRating.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,6 +24,8 @@ namespace QuarterbackRating.Views
     /// </summary>
     public sealed partial class Create : Page
     {
+        private QuarterbackRepo repo = new QuarterbackRepo();
+        
         public Create()
         {
             this.InitializeComponent();
@@ -34,6 +38,16 @@ namespace QuarterbackRating.Views
 
         private void CreateSave_Click(object sender, RoutedEventArgs e)
         {
+            var quarterback = new Quarterback();
+            quarterback.Name = Name.Text;
+            quarterback.PassAttempts = Int32.Parse(PassAttempts.Text);
+            quarterback.PassCompletions = Int32.Parse(PassCompletions.Text);
+            quarterback.PassingYards = Int32.Parse(PassingYards.Text);
+            quarterback.Touchdowns = Int32.Parse(Touchdowns.Text);
+            quarterback.Interceptions = Int32.Parse(Interceptions.Text);
+
+            repo.Create(quarterback);
+            
             this.Frame.Navigate(typeof(MainPage));
         }
     }

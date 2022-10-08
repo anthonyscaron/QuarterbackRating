@@ -31,7 +31,7 @@ namespace QuarterbackRating.Views
 
         private void DetailsForward_Click(object sender, RoutedEventArgs e)
         {
-            var parameter = (sender as Button).Content.ToString();
+            var parameter = (sender as Button).Name;
             this.Frame.Navigate(typeof(Details), parameter);
         }
 
