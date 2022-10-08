@@ -1,2 +1,0 @@
-C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\QuarterbackRating.csproj;x86
-C:\GithubRepos\QuarterbackRating\QuarterbackRating\UnitTests\UnitTests.csproj;x86

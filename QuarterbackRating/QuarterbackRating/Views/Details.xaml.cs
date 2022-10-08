@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QuarterbackRating.Data;
+using QuarterbackRating.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -13,23 +15,39 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
-
 namespace QuarterbackRating.Views
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class Details : Page
     {
+        private Quarterback Quarterback = new Quarterback();
+        private QuarterbackRepo repo = new QuarterbackRepo();
+
         public Details()
         {
             this.InitializeComponent();
+            this.DataContext = Quarterback;
         }
 
         private void DetailsBack_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainPage), null);
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            
+            var name = (string)e.Parameter;
+            var quarterbacks = repo.ReadAll();
+            var quarterback = quarterbacks.FirstOrDefault(q => q.Name == name);
+            Quarterback.Id = quarterback.Id;
+            Quarterback.Name = quarterback.Name;
+            Quarterback.Rating = quarterback.Rating;
+            Quarterback.PassAttempts = quarterback.PassAttempts;
+            Quarterback.PassCompletions = quarterback.PassCompletions;
+            Quarterback.PassingYards = quarterback.PassingYards;
+            Quarterback.Touchdowns = quarterback.Touchdowns;
+            Quarterback.Interceptions = quarterback.Interceptions;
         }
     }
 }

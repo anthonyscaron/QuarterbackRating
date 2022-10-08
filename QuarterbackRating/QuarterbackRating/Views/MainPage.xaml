@@ -1,8 +1,8 @@
 ﻿<Page
-    x:Class="QuarterbackRating.MainPage"
+    x:Class="QuarterbackRating.Views.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:QuarterbackRating"
+    xmlns:local="using:QuarterbackRating.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:data="using:QuarterbackRating.Models"
@@ -47,7 +47,7 @@
                    Text="Current Quarterbacks"
             />
 
-            <ListView Grid.Row="1" Name="QuarterbacksView" ItemsSource="{x:Bind Quarterbacks}" HorizontalAlignment="Center" IsItemClickEnabled="True" ItemClick="QuarterbacksView_ItemClick">
+            <ListView Grid.Row="1" Name="QuarterbacksView" ItemsSource="{x:Bind Quarterbacks}" HorizontalAlignment="Center">
                 <ListView.ItemContainerStyle>
                     <Style TargetType="ListViewItem">
                         <Setter Property="Margin" Value="0,20,0,0"/>
@@ -55,11 +55,16 @@
                 </ListView.ItemContainerStyle>
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="data:Quarterback" >
-                        <StackPanel Orientation="Horizontal">
-                            <StackPanel>
-                                <TextBlock FontSize="20" Text="{x:Bind Name}" />
-                            </StackPanel>
-                        </StackPanel>
+                        <Button Name="DetailsForward"
+                                FontSize="20"
+                                VerticalAlignment="Stretch"
+                                HorizontalAlignment="Stretch"
+                                HorizontalContentAlignment="Stretch"
+                                VerticalContentAlignment="Stretch"
+                                Background="red"
+                                Foreground="White"
+                                Content="{x:Bind Name}"
+                                Click="DetailsForward_Click"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
@@ -68,15 +73,17 @@
         <Rectangle Grid.Row="3" Fill="#FFC62F"/>
         
         <Rectangle Grid.Row="4" Fill="#4F2683"/>
-        <TextBlock Grid.Row="4" 
-                   Name="MainFooter"
-                   FontSize="24"
-                   Foreground="#FFC62F"
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Center"
-                   FontWeight="Bold"
-                   Text="Add a New Rating"
-        />
+        <Button Grid.Row="4"
+                Name="CreateForward"
+                FontSize="24"
+                Foreground="#FFC62F"
+                Background="#4F2683"
+                VerticalAlignment="Stretch"
+                HorizontalAlignment="Stretch"
+                FontWeight="Bold"
+                Click="CreateForward_Click"
+                >Add Rating
+        </Button>
         
     </Grid>
 </Page>

@@ -16,27 +16,28 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
-
-namespace QuarterbackRating
+namespace QuarterbackRating.Views
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class MainPage : Page
     {
         private List<Quarterback> Quarterbacks;
+        private QuarterbackRepo repo = new QuarterbackRepo();
         
         public MainPage()
         {
             this.InitializeComponent();
-            var repo = new QuarterbackRepo();
             Quarterbacks = repo.ReadAll();
         }
 
-        private void QuarterbacksView_ItemClick(object sender, ItemClickEventArgs e)
+        private void DetailsForward_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Details), null);
+            var parameter = (sender as Button).Content.ToString();
+            this.Frame.Navigate(typeof(Details), parameter);
+        }
+
+        private void CreateForward_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Create));
         }
     }
 }
