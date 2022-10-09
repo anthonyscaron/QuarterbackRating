@@ -11606,11 +11606,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\antho\\Desktop\\QuarterbackRating\\QuarterbackRating\\QuarterbackRating.csproj",
+      "projectUniqueName": "C:\\GithubRepos\\QuarterbackRating\\QuarterbackRating\\QuarterbackRating\\QuarterbackRating.csproj",
       "projectName": "QuarterbackRating",
-      "projectPath": "C:\\Users\\antho\\Desktop\\QuarterbackRating\\QuarterbackRating\\QuarterbackRating.csproj",
+      "projectPath": "C:\\GithubRepos\\QuarterbackRating\\QuarterbackRating\\QuarterbackRating\\QuarterbackRating.csproj",
       "packagesPath": "C:\\Users\\antho\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\antho\\Desktop\\QuarterbackRating\\QuarterbackRating\\obj\\",
+      "outputPath": "C:\\GithubRepos\\QuarterbackRating\\QuarterbackRating\\QuarterbackRating\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -11632,8 +11632,8 @@
       "frameworks": {
         "uap10.0.18362": {
           "projectReferences": {
-            "C:\\Users\\antho\\Desktop\\QuarterbackRating\\QuarterbackRating.Core\\QuarterbackRating.Core.csproj": {
-              "projectPath": "C:\\Users\\antho\\Desktop\\QuarterbackRating\\QuarterbackRating.Core\\QuarterbackRating.Core.csproj"
+            "C:\\GithubRepos\\QuarterbackRating\\QuarterbackRating\\QuarterbackRating.Core\\QuarterbackRating.Core.csproj": {
+              "projectPath": "C:\\GithubRepos\\QuarterbackRating\\QuarterbackRating\\QuarterbackRating.Core\\QuarterbackRating.Core.csproj"
             }
           }
         }

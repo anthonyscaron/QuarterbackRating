@@ -8,3 +8,13 @@ C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating.Core\bin\Debug\netsta
 C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating.Core\bin\Debug\netstandard2.0\QuarterbackRating.Core.pdb
 C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating.Core\obj\Debug\netstandard2.0\QuarterbackRating.Core.dll
 C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating.Core\obj\Debug\netstandard2.0\QuarterbackRating.Core.pdb
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core\bin\Debug\netstandard2.0\QuarterbackRating.Core.deps.json
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core\bin\Debug\netstandard2.0\QuarterbackRating.Core.dll
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core\bin\Debug\netstandard2.0\QuarterbackRating.Core.pdb
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core\obj\Debug\netstandard2.0\QuarterbackRating.Core.csproj.AssemblyReference.cache
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core\obj\Debug\netstandard2.0\QuarterbackRating.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core\obj\Debug\netstandard2.0\QuarterbackRating.Core.AssemblyInfoInputs.cache
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core\obj\Debug\netstandard2.0\QuarterbackRating.Core.AssemblyInfo.cs
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core\obj\Debug\netstandard2.0\QuarterbackRating.Core.csproj.CoreCompileInputs.cache
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core\obj\Debug\netstandard2.0\QuarterbackRating.Core.dll
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core\obj\Debug\netstandard2.0\QuarterbackRating.Core.pdb

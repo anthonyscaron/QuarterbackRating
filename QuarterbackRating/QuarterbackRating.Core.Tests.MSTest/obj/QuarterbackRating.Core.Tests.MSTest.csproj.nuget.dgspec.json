@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\antho\\Desktop\\QuarterbackRating\\QuarterbackRating.Core.Tests.MSTest\\QuarterbackRating.Core.Tests.MSTest.csproj": {}
+    "C:\\GithubRepos\\QuarterbackRating\\QuarterbackRating\\QuarterbackRating.Core.Tests.MSTest\\QuarterbackRating.Core.Tests.MSTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\antho\\Desktop\\QuarterbackRating\\QuarterbackRating.Core.Tests.MSTest\\QuarterbackRating.Core.Tests.MSTest.csproj": {
+    "C:\\GithubRepos\\QuarterbackRating\\QuarterbackRating\\QuarterbackRating.Core.Tests.MSTest\\QuarterbackRating.Core.Tests.MSTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\antho\\Desktop\\QuarterbackRating\\QuarterbackRating.Core.Tests.MSTest\\QuarterbackRating.Core.Tests.MSTest.csproj",
+        "projectUniqueName": "C:\\GithubRepos\\QuarterbackRating\\QuarterbackRating\\QuarterbackRating.Core.Tests.MSTest\\QuarterbackRating.Core.Tests.MSTest.csproj",
         "projectName": "QuarterbackRating.Core.Tests.MSTest",
-        "projectPath": "C:\\Users\\antho\\Desktop\\QuarterbackRating\\QuarterbackRating.Core.Tests.MSTest\\QuarterbackRating.Core.Tests.MSTest.csproj",
+        "projectPath": "C:\\GithubRepos\\QuarterbackRating\\QuarterbackRating\\QuarterbackRating.Core.Tests.MSTest\\QuarterbackRating.Core.Tests.MSTest.csproj",
         "packagesPath": "C:\\Users\\antho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\antho\\Desktop\\QuarterbackRating\\QuarterbackRating.Core.Tests.MSTest\\obj\\",
+        "outputPath": "C:\\GithubRepos\\QuarterbackRating\\QuarterbackRating\\QuarterbackRating.Core.Tests.MSTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\antho\\Desktop\\QuarterbackRating\\QuarterbackRating.Core\\QuarterbackRating.Core.csproj": {
-                "projectPath": "C:\\Users\\antho\\Desktop\\QuarterbackRating\\QuarterbackRating.Core\\QuarterbackRating.Core.csproj"
+              "C:\\GithubRepos\\QuarterbackRating\\QuarterbackRating\\QuarterbackRating.Core\\QuarterbackRating.Core.csproj": {
+                "projectPath": "C:\\GithubRepos\\QuarterbackRating\\QuarterbackRating\\QuarterbackRating.Core\\QuarterbackRating.Core.csproj"
               }
             }
           }
@@ -80,14 +80,14 @@
         }
       }
     },
-    "C:\\Users\\antho\\Desktop\\QuarterbackRating\\QuarterbackRating.Core\\QuarterbackRating.Core.csproj": {
+    "C:\\GithubRepos\\QuarterbackRating\\QuarterbackRating\\QuarterbackRating.Core\\QuarterbackRating.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\antho\\Desktop\\QuarterbackRating\\QuarterbackRating.Core\\QuarterbackRating.Core.csproj",
+        "projectUniqueName": "C:\\GithubRepos\\QuarterbackRating\\QuarterbackRating\\QuarterbackRating.Core\\QuarterbackRating.Core.csproj",
         "projectName": "QuarterbackRating.Core",
-        "projectPath": "C:\\Users\\antho\\Desktop\\QuarterbackRating\\QuarterbackRating.Core\\QuarterbackRating.Core.csproj",
+        "projectPath": "C:\\GithubRepos\\QuarterbackRating\\QuarterbackRating\\QuarterbackRating.Core\\QuarterbackRating.Core.csproj",
         "packagesPath": "C:\\Users\\antho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\antho\\Desktop\\QuarterbackRating\\QuarterbackRating.Core\\obj\\",
+        "outputPath": "C:\\GithubRepos\\QuarterbackRating\\QuarterbackRating\\QuarterbackRating.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

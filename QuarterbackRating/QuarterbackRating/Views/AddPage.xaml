@@ -9,10 +9,110 @@
     <Grid x:Name="ContentArea" >
         <Grid
             Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
-            <!--
-                The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
-                Place your content here.
-            -->
+            <ScrollViewer
+        Name="ForegroundElement"
+        Padding="{StaticResource DetailPageMargin}"
+        HorizontalAlignment="Stretch"
+        Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+        VerticalScrollMode="Enabled"
+        IsTabStop="True">
+                <Grid>
+                    <StackPanel HorizontalAlignment="Left">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="0,0,0,20">
+                            <FontIcon
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontSize="48"
+                                Glyph="&#xE77B;" />
+                            <TextBlock
+                                Margin="{StaticResource SmallLeftMargin}"
+                                VerticalAlignment="Center"
+                                Style="{ThemeResource TitleTextBlockStyle}"
+                                Text="Quarterback Details"/>
+                        </StackPanel>
+                        <Grid VerticalAlignment="Center" HorizontalAlignment="Left">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <StackPanel Margin="0,0,0,20">
+                                <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Name: " />
+                            </StackPanel>
+                            <StackPanel Grid.Column="1" Margin="20,0,0,20">
+                                <TextBox Text="" />
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="1" Margin="0,0,0,20">
+                                <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Pass Attempts: " />
+                            </StackPanel>
+                            <StackPanel Grid.Row="1" Grid.Column="1" Margin="20,0,0,20">
+                                <TextBox Text="" />
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="2" Margin="0,0,0,20">
+                                <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Pass Completions: " />
+                            </StackPanel>
+                            <StackPanel Grid.Row="2" Grid.Column="1" Margin="20,0,0,20">
+                                <TextBox Text="" />
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="3" Margin="0,0,0,20">
+                                <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Passing Yards: " />
+                            </StackPanel>
+                            <StackPanel Grid.Row="3" Grid.Column="1" Margin="20,0,0,20">
+                                <TextBox Text="" />
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="4" Margin="0,0,0,20">
+                                <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Passing Touchdowns: " />
+                            </StackPanel>
+                            <StackPanel Grid.Row="4" Grid.Column="1" Margin="20,0,0,20" VerticalAlignment="Center">
+                                <TextBox Text="" />
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="5" Margin="0,0,0,20">
+                                <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Interceptions: " />
+                            </StackPanel>
+                            <StackPanel Grid.Row="5" Grid.Column="1" Margin="20,0,0,20">
+                                <TextBox Text="" />
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="6" Margin="0,0,0,20">
+                                <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Rating: " />
+                            </StackPanel>
+                            <StackPanel Grid.Row="6" Grid.Column="1" Margin="20,0,0,20">
+                                <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="PENDING" />
+                            </StackPanel>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <FontIcon
+                                VerticalAlignment="Center"
+                                FontSize="32"
+                                Glyph="&#xE8EF;" />
+                            <StackPanel
+                                Grid.Column="1"
+                                Margin="{StaticResource SmallLeftMargin}"
+                                VerticalAlignment="Center" >
+                                <TextBlock Style="{ThemeResource ListTitleStyle}" Text="Calculate Rating" />
+                            </StackPanel>
+                        </Grid>
+                    </StackPanel>
+                </Grid>
+            </ScrollViewer>
         </Grid>
     </Grid>
 </Page>

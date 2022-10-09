@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>12A8B957-0534-44CF-A3CD-7D6CE07DBA70</PackageIdentityName>
     <PackageIdentityPublisher>CN=antho</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>5A2D5EEA8CA87569C5414A4F04FFD370C0775F130BBB97F8AE2C85FC73E774CD</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>12A8B957-0534-44CF-A3CD-7D6CE07DBA70_1.0.0.0_x86__rr44gks5m5aty</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>12A8B957-0534-44CF-A3CD-7D6CE07DBA70_rr44gks5m5aty!App</RegisteredUserModeAppID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-10-09T22:16:41.325</Modified>
+      <Modified>2022-10-09T22:27:18.304</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating\bin\x86\Debug\QuarterbackRating.exe">
+    <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\QuarterbackRating.exe">
       <PackagePath>entrypoint\QuarterbackRating.exe</PackagePath>
-      <Modified>2022-10-09T22:16:40.353</Modified>
+      <Modified>2022-10-09T22:27:16.826</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\antho\.nuget\packages\microsoft.web.webview2\1.0.1264.42\build\..\runtimes\win-x86\native_uap\Microsoft.Web.WebView2.Core.dll">
       <PackagePath>Microsoft.Web.WebView2.Core.dll</PackagePath>
@@ -134,9 +134,9 @@
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
       <Modified>2020-04-02T19:44:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating.Core\bin\Debug\netstandard2.0\QuarterbackRating.Core.dll">
+    <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core\bin\Debug\netstandard2.0\QuarterbackRating.Core.dll">
       <PackagePath>QuarterbackRating.Core.dll</PackagePath>
-      <Modified>2022-10-09T22:01:43.815</Modified>
+      <Modified>2022-10-09T22:19:58.208</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\antho\.nuget\packages\microsoft.ui.xaml\2.8.2-prerelease.220830001\runtimes\win10-x86\native\Microsoft.UI.Xaml\Assets\NoiseAsset_256x256_PNG.png">
       <PackagePath>NoiseAsset_256x256_PNG.png</PackagePath>
@@ -182,87 +182,87 @@
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.Media\Microsoft.Toolkit.Uwp.UI.Controls.Media.xr.xml</PackagePath>
       <Modified>2021-11-18T21:55:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2022-10-09T21:52:31.747</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2022-10-09T21:52:30.440</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-10-09T21:52:30.443</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-10-09T21:52:30.445</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-10-09T21:52:30.447</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-10-09T21:52:30.449</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-10-09T21:52:30.451</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-10-09T21:52:30.454</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating\bin\x86\Debug\QuarterbackRating.xr.xml">
+    <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\QuarterbackRating.xr.xml">
       <PackagePath>QuarterbackRating.xr.xml</PackagePath>
-      <Modified>2022-10-09T22:16:40.105</Modified>
+      <Modified>2022-10-09T22:27:16.561</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-10-09T22:02:36.659</Modified>
+      <Modified>2022-10-09T22:27:16.620</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Styles\Page.xbf">
+    <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Styles\Page.xbf">
       <PackagePath>Styles\Page.xbf</PackagePath>
-      <Modified>2022-10-09T22:16:40.135</Modified>
+      <Modified>2022-10-09T22:27:16.619</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Styles\_Colors.xbf">
+    <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Styles\_Colors.xbf">
       <PackagePath>Styles\_Colors.xbf</PackagePath>
-      <Modified>2022-10-09T22:16:40.135</Modified>
+      <Modified>2022-10-09T22:27:16.619</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Styles\_FontSizes.xbf">
+    <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Styles\_FontSizes.xbf">
       <PackagePath>Styles\_FontSizes.xbf</PackagePath>
-      <Modified>2022-10-09T22:16:40.135</Modified>
+      <Modified>2022-10-09T22:27:16.620</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Styles\_Thickness.xbf">
+    <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Styles\_Thickness.xbf">
       <PackagePath>Styles\_Thickness.xbf</PackagePath>
-      <Modified>2022-10-09T22:16:40.136</Modified>
+      <Modified>2022-10-09T22:27:16.620</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Styles\TextBlock.xbf">
+    <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Styles\TextBlock.xbf">
       <PackagePath>Styles\TextBlock.xbf</PackagePath>
-      <Modified>2022-10-09T22:16:40.136</Modified>
+      <Modified>2022-10-09T22:27:16.620</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Views\AddPage.xbf">
+    <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Views\AddPage.xbf">
       <PackagePath>Views\AddPage.xbf</PackagePath>
-      <Modified>2022-10-09T22:16:40.136</Modified>
+      <Modified>2022-10-09T22:27:16.621</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Views\QuarterbackDetailControl.xbf">
+    <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Views\QuarterbackDetailControl.xbf">
       <PackagePath>Views\QuarterbackDetailControl.xbf</PackagePath>
-      <Modified>2022-10-09T22:16:40.136</Modified>
+      <Modified>2022-10-09T22:27:16.621</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Views\QuarterbackPage.xbf">
+    <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Views\QuarterbackPage.xbf">
       <PackagePath>Views\QuarterbackPage.xbf</PackagePath>
-      <Modified>2022-10-09T22:16:40.136</Modified>
+      <Modified>2022-10-09T22:27:16.621</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Views\ShellPage.xbf">
+    <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Views\ShellPage.xbf">
       <PackagePath>Views\ShellPage.xbf</PackagePath>
-      <Modified>2022-10-09T22:16:40.137</Modified>
+      <Modified>2022-10-09T22:27:16.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -272,13 +272,13 @@
       <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>
       <Modified>2022-08-31T02:42:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-10-09T22:02:39.589</Modified>
+      <Modified>2022-10-09T22:20:11.945</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Core\QuarterbackRating.exe">
+    <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Core\QuarterbackRating.exe">
       <PackagePath>QuarterbackRating.exe</PackagePath>
-      <Modified>2022-10-09T22:16:41.321</Modified>
+      <Modified>2022-10-09T22:27:18.298</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

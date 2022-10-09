@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A3k6zLy1eZb27+iZh0J9CEJye3WQHU42gX2y5mpqfnXgI+xTkXXfeVIRYkFxF/TCjeIoHY6D7oUL5Rve+cS5Ng==",
+  "dgSpecHash": "Nfy2i4xOTOyLy6rOb/wMxuJBmB3Jy92hL8yft2kZnlurzke9FT0cY/FrfZCaWQph0V7BzKAwGhlt+vvHZdcdXA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\antho\\Desktop\\QuarterbackRating\\QuarterbackRating.Core.Tests.MSTest\\QuarterbackRating.Core.Tests.MSTest.csproj",
+  "projectFilePath": "C:\\GithubRepos\\QuarterbackRating\\QuarterbackRating\\QuarterbackRating.Core.Tests.MSTest\\QuarterbackRating.Core.Tests.MSTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\antho\\.nuget\\packages\\microsoft.codecoverage\\17.5.0-preview-20221003-04\\microsoft.codecoverage.17.5.0-preview-20221003-04.nupkg.sha512",
     "C:\\Users\\antho\\.nuget\\packages\\microsoft.net.test.sdk\\17.5.0-preview-20221003-04\\microsoft.net.test.sdk.17.5.0-preview-20221003-04.nupkg.sha512",
