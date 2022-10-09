@@ -1,7 +1,0 @@
-C:\GithubRepos\QuarterbackRating\QuarterbackRating\UnitTests\obj\x86\Debug\UnitTests.csproj.AssemblyReference.cache
-C:\GithubRepos\QuarterbackRating\QuarterbackRating\UnitTests\obj\x86\Debug\UnitTestApp.g.i.cs
-C:\GithubRepos\QuarterbackRating\QuarterbackRating\UnitTests\obj\x86\Debug\UnitTestApp.g.cs
-C:\GithubRepos\QuarterbackRating\QuarterbackRating\UnitTests\obj\x86\Debug\XamlTypeInfo.g.cs
-C:\GithubRepos\QuarterbackRating\QuarterbackRating\UnitTests\obj\x86\Debug\UnitTestApp.xaml
-C:\GithubRepos\QuarterbackRating\QuarterbackRating\UnitTests\obj\x86\Debug\UnitTestApp.xbf
-C:\GithubRepos\QuarterbackRating\QuarterbackRating\UnitTests\obj\x86\Debug\XamlSaveStateFile.xml

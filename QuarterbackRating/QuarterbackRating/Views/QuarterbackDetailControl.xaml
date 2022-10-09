@@ -1,0 +1,114 @@
+﻿<UserControl
+    x:Class="QuarterbackRating.Views.QuarterbackDetailControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+    <ScrollViewer
+        Name="ForegroundElement"
+        Padding="{StaticResource DetailPageMargin}"
+        HorizontalAlignment="Stretch"
+        Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+        VerticalScrollMode="Enabled"
+        IsTabStop="True">
+        <StackPanel HorizontalAlignment="Left">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="0,0,0,20">
+                <FontIcon
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="48"
+                    Glyph="&#xE77B;" />
+                <TextBlock
+                    Margin="{StaticResource SmallLeftMargin}"
+                    VerticalAlignment="Center"
+                    Text="{x:Bind ListMenuItem.Name, Mode=OneWay}"
+                    Style="{ThemeResource TitleTextBlockStyle}" />
+            </StackPanel>
+            <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <GridView>
+                    <StackPanel Padding="0,0,0,20">
+                        <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Rating: " />
+                    </StackPanel>
+                </GridView>
+                <GridView Grid.Column="1">
+                    <StackPanel Padding="0,0,0,20">
+                        <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="{x:Bind ListMenuItem.Rating, Mode=OneWay}" />
+                    </StackPanel>
+                </GridView>
+                <GridView Grid.Row="1">
+                    <StackPanel Padding="0,0,0,20">
+                        <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Pass Attempts: " />
+                    </StackPanel>
+                </GridView>
+                <GridView Grid.Row="1" Grid.Column="1">
+                    <StackPanel Padding="0,0,0,20">
+                        <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="{x:Bind ListMenuItem.PassAttempts, Mode=OneWay}" />
+                    </StackPanel>
+                </GridView>
+                <GridView Grid.Row="2">
+                    <StackPanel Padding="0,0,0,20">
+                        <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Pass Completions: " />
+                    </StackPanel>
+                </GridView>
+                <GridView Grid.Row="2" Grid.Column="1">
+                    <StackPanel Padding="0,0,0,20">
+                        <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="{x:Bind ListMenuItem.PassCompletions, Mode=OneWay}" />
+                    </StackPanel>
+                </GridView>
+                <GridView Grid.Row="3">
+                    <StackPanel Padding="0,0,0,20">
+                        <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Passing Yards: " />
+                    </StackPanel>
+                </GridView>
+                <GridView Grid.Row="3" Grid.Column="1">
+                    <StackPanel Padding="0,0,0,20">
+                        <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="{x:Bind ListMenuItem.PassingYards, Mode=OneWay}" />
+                    </StackPanel>
+                </GridView>
+                <GridView Grid.Row="4">
+                    <StackPanel Padding="0,0,0,20">
+                        <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Passing Touchdowns: " />
+                    </StackPanel>
+                </GridView>
+                <GridView Grid.Row="4" Grid.Column="1">
+                    <StackPanel Padding="0,0,0,20">
+                        <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="{x:Bind ListMenuItem.Touchdowns, Mode=OneWay}" />
+                    </StackPanel>
+                </GridView>
+                <GridView Grid.Row="5">
+                    <StackPanel Padding="0,0,0,20">
+                        <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Interceptions: " />
+                    </StackPanel>
+                </GridView>
+                <GridView Grid.Row="5" Grid.Column="1">
+                    <StackPanel Padding="0,0,0,20">
+                        <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="{x:Bind ListMenuItem.Interceptions, Mode=OneWay}" />
+                    </StackPanel>
+                </GridView>
+                <GridView Grid.Row="6">
+                    <Button>Edit</Button>
+                </GridView>
+                <GridView Grid.Row="6" Grid.Column="1">
+                    <Button>Delete</Button>
+                </GridView>
+            </Grid>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>
