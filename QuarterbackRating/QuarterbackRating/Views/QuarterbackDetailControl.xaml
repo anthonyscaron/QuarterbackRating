@@ -15,100 +15,107 @@
         Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
         VerticalScrollMode="Enabled"
         IsTabStop="True">
-        <StackPanel HorizontalAlignment="Left">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="0,0,0,20">
-                <FontIcon
+        <Grid>
+            <StackPanel HorizontalAlignment="Left">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="0,0,0,20">
+                    <FontIcon
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     FontSize="48"
                     Glyph="&#xE77B;" />
-                <TextBlock
+                    <TextBlock
                     Margin="{StaticResource SmallLeftMargin}"
                     VerticalAlignment="Center"
                     Text="{x:Bind ListMenuItem.Name, Mode=OneWay}"
                     Style="{ThemeResource TitleTextBlockStyle}" />
-            </StackPanel>
-            <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <GridView>
-                    <StackPanel Padding="0,0,0,20">
+                </StackPanel>
+                <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Margin="0,0,0,20">
                         <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Rating: " />
                     </StackPanel>
-                </GridView>
-                <GridView Grid.Column="1">
-                    <StackPanel Padding="0,0,0,20">
+                    <StackPanel Grid.Column="1" Margin="20,0,0,20">
                         <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="{x:Bind ListMenuItem.Rating, Mode=OneWay}" />
                     </StackPanel>
-                </GridView>
-                <GridView Grid.Row="1">
-                    <StackPanel Padding="0,0,0,20">
+
+                    <StackPanel Grid.Row="1" Margin="0,0,0,20">
                         <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Pass Attempts: " />
                     </StackPanel>
-                </GridView>
-                <GridView Grid.Row="1" Grid.Column="1">
-                    <StackPanel Padding="0,0,0,20">
+                    <StackPanel Grid.Row="1" Grid.Column="1" Margin="20,0,0,20">
                         <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="{x:Bind ListMenuItem.PassAttempts, Mode=OneWay}" />
                     </StackPanel>
-                </GridView>
-                <GridView Grid.Row="2">
-                    <StackPanel Padding="0,0,0,20">
+
+                    <StackPanel Grid.Row="2" Margin="0,0,0,20">
                         <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Pass Completions: " />
                     </StackPanel>
-                </GridView>
-                <GridView Grid.Row="2" Grid.Column="1">
-                    <StackPanel Padding="0,0,0,20">
+                    <StackPanel Grid.Row="2" Grid.Column="1" Margin="20,0,0,20">
                         <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="{x:Bind ListMenuItem.PassCompletions, Mode=OneWay}" />
                     </StackPanel>
-                </GridView>
-                <GridView Grid.Row="3">
-                    <StackPanel Padding="0,0,0,20">
+
+                    <StackPanel Grid.Row="3" Margin="0,0,0,20">
                         <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Passing Yards: " />
                     </StackPanel>
-                </GridView>
-                <GridView Grid.Row="3" Grid.Column="1">
-                    <StackPanel Padding="0,0,0,20">
+                    <StackPanel Grid.Row="3" Grid.Column="1" Margin="20,0,0,20">
                         <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="{x:Bind ListMenuItem.PassingYards, Mode=OneWay}" />
                     </StackPanel>
-                </GridView>
-                <GridView Grid.Row="4">
-                    <StackPanel Padding="0,0,0,20">
+
+                    <StackPanel Grid.Row="4" Margin="0,0,0,20">
                         <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Passing Touchdowns: " />
                     </StackPanel>
-                </GridView>
-                <GridView Grid.Row="4" Grid.Column="1">
-                    <StackPanel Padding="0,0,0,20">
+                    <StackPanel Grid.Row="4" Grid.Column="1" Margin="20,0,0,20" VerticalAlignment="Center">
                         <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="{x:Bind ListMenuItem.Touchdowns, Mode=OneWay}" />
                     </StackPanel>
-                </GridView>
-                <GridView Grid.Row="5">
-                    <StackPanel Padding="0,0,0,20">
+
+                    <StackPanel Grid.Row="5" Margin="0,0,0,20">
                         <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Interceptions: " />
                     </StackPanel>
-                </GridView>
-                <GridView Grid.Row="5" Grid.Column="1">
-                    <StackPanel Padding="0,0,0,20">
+                    <StackPanel Grid.Row="5" Grid.Column="1" Margin="20,0,0,20">
                         <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="{x:Bind ListMenuItem.Interceptions, Mode=OneWay}" />
                     </StackPanel>
-                </GridView>
-                <GridView Grid.Row="6">
-                    <Button>Edit</Button>
-                </GridView>
-                <GridView Grid.Row="6" Grid.Column="1">
-                    <Button>Delete</Button>
-                </GridView>
-            </Grid>
-        </StackPanel>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <FontIcon
+                            VerticalAlignment="Center"
+                            FontSize="32"
+                            Glyph="&#xE70F;" />
+                    <StackPanel
+                            Grid.Column="1"
+                            Margin="{StaticResource SmallLeftMargin}"
+                            VerticalAlignment="Center">
+                        <TextBlock Style="{ThemeResource ListTitleStyle}" Text="Edit" />
+                    </StackPanel>
+                    <FontIcon
+                            Grid.Column="2"
+                            VerticalAlignment="Center"
+                            FontSize="32"
+                            Glyph="&#xE74D;" />
+                    <StackPanel
+                            Grid.Column="3"
+                            Margin="{StaticResource SmallLeftMargin}"
+                            VerticalAlignment="Center" >
+                        <TextBlock Style="{ThemeResource ListTitleStyle}" Text="Delete" />
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+        </Grid>
     </ScrollViewer>
 </UserControl>

@@ -15,101 +15,127 @@
         Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
         VerticalScrollMode="Enabled"
         IsTabStop="True">
-        <StackPanel HorizontalAlignment="Left">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="0,0,0,20">
-                <FontIcon
+        <Grid>
+            <StackPanel HorizontalAlignment="Left">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="0,0,0,20">
+                    <FontIcon
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     FontSize="48"
                     Glyph="&#xE77B;" />
-                <TextBlock x:ConnectionId='9'
+                    <TextBlock x:ConnectionId='10'
                     Margin="{StaticResource SmallLeftMargin}"
                     VerticalAlignment="Center"
                                                                   
                     Style="{ThemeResource TitleTextBlockStyle}" />
+                </StackPanel>
+                <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <GridView>
+                        <StackPanel Padding="0,0,0,20">
+                            <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Rating: " />
+                        </StackPanel>
+                    </GridView>
+                    <GridView Grid.Column="1">
+                        <StackPanel Padding="0,0,0,20">
+                            <TextBlock x:ConnectionId='9' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                  />
+                        </StackPanel>
+                    </GridView>
+                    <GridView Grid.Row="1">
+                        <StackPanel Padding="0,0,0,20">
+                            <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Pass Attempts: " />
+                        </StackPanel>
+                    </GridView>
+                    <GridView Grid.Row="1" Grid.Column="1">
+                        <StackPanel Padding="0,0,0,20">
+                            <TextBlock x:ConnectionId='8' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                        />
+                        </StackPanel>
+                    </GridView>
+                    <GridView Grid.Row="2">
+                        <StackPanel Padding="0,0,0,20">
+                            <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Pass Completions: " />
+                        </StackPanel>
+                    </GridView>
+                    <GridView x:ConnectionId='3' Grid.Row="2" Grid.Column="1"                                             >
+                        <StackPanel Padding="0,0,0,20">
+                            <TextBlock x:ConnectionId='7' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                           />
+                        </StackPanel>
+                    </GridView>
+                    <GridView Grid.Row="3">
+                        <StackPanel Padding="0,0,0,20">
+                            <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Passing Yards: " />
+                        </StackPanel>
+                    </GridView>
+                    <GridView Grid.Row="3" Grid.Column="1">
+                        <StackPanel Padding="0,0,0,20">
+                            <TextBlock x:ConnectionId='6' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                        />
+                        </StackPanel>
+                    </GridView>
+                    <GridView Grid.Row="4">
+                        <StackPanel Padding="0,0,0,20">
+                            <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Passing Touchdowns: " />
+                        </StackPanel>
+                    </GridView>
+                    <GridView Grid.Row="4" Grid.Column="1">
+                        <StackPanel Padding="0,0,0,20">
+                            <TextBlock x:ConnectionId='5' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                      />
+                        </StackPanel>
+                    </GridView>
+                    <GridView Grid.Row="5">
+                        <StackPanel Padding="0,0,0,20">
+                            <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Interceptions: " />
+                        </StackPanel>
+                    </GridView>
+                    <GridView Grid.Row="5" Grid.Column="1">
+                        <StackPanel Padding="0,0,0,20">
+                            <TextBlock x:ConnectionId='4' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                         />
+                        </StackPanel>
+                    </GridView>
+                    <Grid Grid.Row="6">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <GridView HorizontalAlignment="Center">
+                            <FontIcon
+                                VerticalAlignment="Center"
+                                FontSize="32"
+                                Glyph="&#xE70F;" />
+                            <StackPanel
+                                Margin="{StaticResource SmallLeftMargin}"
+                                VerticalAlignment="Center">
+                                <TextBlock Style="{ThemeResource ListTitleStyle}" Text="Edit" />
+                            </StackPanel>
+                        </GridView>
+                        <GridView Grid.Column="2" HorizontalAlignment="Center">
+                            <FontIcon
+                            VerticalAlignment="Center"
+                            FontSize="32"
+                            Glyph="&#xE74D;" />
+                            <StackPanel
+                                Margin="{StaticResource SmallLeftMargin}"
+                                VerticalAlignment="Center" >
+                                <TextBlock Style="{ThemeResource ListTitleStyle}" Text="Delete" />
+                            </StackPanel>
+                        </GridView>
+                    </Grid>
+                </Grid>
             </StackPanel>
-            <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <GridView>
-                    <StackPanel Padding="0,0,0,20">
-                        <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Rating: " />
-                    </StackPanel>
-                </GridView>
-                <GridView Grid.Column="1">
-                    <StackPanel Padding="0,0,0,20">
-                        <TextBlock x:ConnectionId='8' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                  />
-                    </StackPanel>
-                </GridView>
-                <GridView Grid.Row="1">
-                    <StackPanel Padding="0,0,0,20">
-                        <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Pass Attempts: " />
-                    </StackPanel>
-                </GridView>
-                <GridView Grid.Row="1" Grid.Column="1">
-                    <StackPanel Padding="0,0,0,20">
-                        <TextBlock x:ConnectionId='7' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                        />
-                    </StackPanel>
-                </GridView>
-                <GridView Grid.Row="2">
-                    <StackPanel Padding="0,0,0,20">
-                        <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Pass Completions: " />
-                    </StackPanel>
-                </GridView>
-                <GridView Grid.Row="2" Grid.Column="1">
-                    <StackPanel Padding="0,0,0,20">
-                        <TextBlock x:ConnectionId='6' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                           />
-                    </StackPanel>
-                </GridView>
-                <GridView Grid.Row="3">
-                    <StackPanel Padding="0,0,0,20">
-                        <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Passing Yards: " />
-                    </StackPanel>
-                </GridView>
-                <GridView Grid.Row="3" Grid.Column="1">
-                    <StackPanel Padding="0,0,0,20">
-                        <TextBlock x:ConnectionId='5' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                        />
-                    </StackPanel>
-                </GridView>
-                <GridView Grid.Row="4">
-                    <StackPanel Padding="0,0,0,20">
-                        <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Passing Touchdowns: " />
-                    </StackPanel>
-                </GridView>
-                <GridView Grid.Row="4" Grid.Column="1">
-                    <StackPanel Padding="0,0,0,20">
-                        <TextBlock x:ConnectionId='4' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                      />
-                    </StackPanel>
-                </GridView>
-                <GridView Grid.Row="5">
-                    <StackPanel Padding="0,0,0,20">
-                        <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Interceptions: " />
-                    </StackPanel>
-                </GridView>
-                <GridView Grid.Row="5" Grid.Column="1">
-                    <StackPanel Padding="0,0,0,20">
-                        <TextBlock x:ConnectionId='3' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                         />
-                    </StackPanel>
-                </GridView>
-                <GridView Grid.Row="6">
-                    <Button>Edit</Button>
-                </GridView>
-                <GridView Grid.Row="6" Grid.Column="1">
-                    <Button>Delete</Button>
-                </GridView>
-            </Grid>
-        </StackPanel>
+        </Grid>
     </ScrollViewer>
 </UserControl>
 
