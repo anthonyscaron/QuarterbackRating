@@ -8,6 +8,7 @@
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     Style="{StaticResource PageStyle}"
     xmlns:model="using:QuarterbackRating.Core.Models"
+    xmlns:data="using:QuarterbackRating.Core.Models"
     xmlns:views="using:QuarterbackRating.Views"
     mc:Ignorable="d">
     <Page.Transitions>
@@ -63,40 +64,18 @@
             </Grid>
         </DataTemplate>
     </Page.Resources>
-
     <Grid x:Name="ContentArea">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="100"/>
-        </Grid.RowDefinitions>
         <controls:ListDetailsView
-            x:Name="ListDetailsViewControl"
-            x:Uid="Quarterback"
-            BackButtonBehavior="Inline"
-            Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}"
-            BorderBrush="Transparent"
-            DetailsTemplate="{StaticResource DetailsTemplate}"
-            ItemsSource="{x:Bind ViewModel.Quarterbacks}"
-            ItemTemplate="{StaticResource ItemTemplate}"
-            ListHeaderTemplate="{StaticResource ListHeaderTemplate}"
-            NoSelectionContentTemplate="{StaticResource NoSelectionContentTemplate}"
-            SelectedItem="{x:Bind ViewModel.Selected, Mode=TwoWay}" />
-        <Grid Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <FontIcon
-                    Grid.Column="0"
-                    VerticalAlignment="Center"
-                    FontSize="32"
-                    Glyph="&#xE710;" />
-            <StackPanel
-                    Grid.Column="1"
-                    Margin="{StaticResource SmallLeftMargin}"
-                    VerticalAlignment="Center">
-                <TextBlock Style="{ThemeResource ListTitleStyle}" Text="Add Quarterback" />
-            </StackPanel>
-        </Grid>
+        x:Name="ListDetailsViewControl"
+        x:Uid="Quarterback"
+        BackButtonBehavior="Inline"
+        Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}"
+        BorderBrush="Transparent"
+        DetailsTemplate="{StaticResource DetailsTemplate}"
+        ItemsSource="{x:Bind ViewModel.Quarterbacks}"
+        ItemTemplate="{StaticResource ItemTemplate}"
+        ListHeaderTemplate="{StaticResource ListHeaderTemplate}"
+        NoSelectionContentTemplate="{StaticResource NoSelectionContentTemplate}"
+        SelectedItem="{x:Bind ViewModel.Selected, Mode=TwoWay}" />
     </Grid>
 </Page>

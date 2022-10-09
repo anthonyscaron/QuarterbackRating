@@ -1,3 +1,4 @@
+WinMetadata\Windows.winmd
 Assets\LockScreenLogo.scale-200.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
@@ -12,7 +13,8 @@ Styles\_FontSizes.xbf
 Styles\_Thickness.xbf
 Styles\Page.xbf
 Styles\TextBlock.xbf
+Views\AddPage.xbf
 Views\QuarterbackDetailControl.xbf
 Views\QuarterbackPage.xbf
+Views\ShellPage.xbf
 Properties\Default.rd.xml
-WinMetadata\Windows.winmd

@@ -29,7 +29,7 @@ namespace QuarterbackRating.Core.Services
 
         public static List<Quarterback> ReadAll()
         {
-            return _quarterbacks.OrderBy(q => q.Name).ToList();
+            return _quarterbacks.OrderByDescending(q => q.Id).ToList();
         }
 
         public static Quarterback ReadbyId(int id)

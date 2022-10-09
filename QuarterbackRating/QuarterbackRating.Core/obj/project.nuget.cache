@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "btERBA2frBhbGNwPRqMYqDmNdff78DLGgpnS9G7hbLyAvECIe+2CktAtjwEYGM6xYuE8U9Q0e2vuZanPSgQyLw==",
+  "dgSpecHash": "BKIw2EMOGFkwqZho6ojKDdkPPbN3nVo6Jx9BCkR+ONUVuLBVmgxUDna0Xb90VWHeoNkh117bDKPaLE0eC26p8A==",
   "success": true,
-  "projectFilePath": "C:\\GithubRepos\\QuarterbackRating\\QuarterbackRating\\QuarterbackRating.Core\\QuarterbackRating.Core.csproj",
+  "projectFilePath": "C:\\Users\\antho\\Desktop\\QuarterbackRating\\QuarterbackRating.Core\\QuarterbackRating.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\antho\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\antho\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

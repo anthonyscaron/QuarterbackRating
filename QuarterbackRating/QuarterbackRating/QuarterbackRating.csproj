@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{9081F409-6173-448D-AE34-6C21FAAAD257}</ProjectGuid>
+    <ProjectGuid>{762353E6-4CB4-4B97-AF38-1F2BFCA3E160}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>QuarterbackRating</RootNamespace>
@@ -125,6 +125,9 @@
     <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls">
       <Version>7.1.2</Version>
     </PackageReference>
+    <PackageReference Include="Microsoft.UI.Xaml">
+      <Version>2.8.2-prerelease.220830001</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.Xaml.Behaviors.Uwp.Managed">
       <Version>2.0.1</Version>
     </PackageReference>
@@ -134,15 +137,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activation\ActivationHandler.cs" />
+    <Compile Include="Behaviors\NavigationViewHeaderBehavior.cs" />
+    <Compile Include="Behaviors\NavigationViewHeaderMode.cs" />
+    <Compile Include="Helpers\NavHelper.cs" />
     <Compile Include="Services\ActivationService.cs" />
     <Compile Include="Activation\DefaultActivationHandler.cs" />
     <Compile Include="Services\NavigationService.cs" />
+    <Compile Include="ViewModels\AddViewModel.cs" />
     <Compile Include="ViewModels\QuarterbackViewModel.cs" />
+    <Compile Include="ViewModels\ShellViewModel.cs" />
+    <Compile Include="Views\AddPage.xaml.cs">
+      <DependentUpon>AddPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\QuarterbackDetailControl.xaml.cs">
       <DependentUpon>QuarterbackDetailControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\QuarterbackPage.xaml.cs">
       <DependentUpon>QuarterbackPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShellPage.xaml.cs">
+      <DependentUpon>ShellPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -172,11 +186,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\AddPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Views\QuarterbackDetailControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\QuarterbackPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ShellPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -211,7 +233,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QuarterbackRating.Core\QuarterbackRating.Core.csproj">
-      <Project>{5C3CAA16-98D0-481E-AFB5-CFAE4EA01B4B}</Project>
+      <Project>{90F8D578-52F1-4AC1-ACD6-25EF03D14A6D}</Project>
       <Name>QuarterbackRating.Core</Name>
     </ProjectReference>
   </ItemGroup>

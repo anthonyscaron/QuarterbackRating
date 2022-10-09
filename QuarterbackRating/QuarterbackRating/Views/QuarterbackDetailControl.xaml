@@ -29,7 +29,7 @@
                     Text="{x:Bind ListMenuItem.Name, Mode=OneWay}"
                     Style="{ThemeResource TitleTextBlockStyle}" />
                 </StackPanel>
-                <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Grid VerticalAlignment="Center" HorizontalAlignment="Left">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
@@ -90,26 +90,13 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <FontIcon
                             VerticalAlignment="Center"
                             FontSize="32"
-                            Glyph="&#xE70F;" />
-                    <StackPanel
-                            Grid.Column="1"
-                            Margin="{StaticResource SmallLeftMargin}"
-                            VerticalAlignment="Center">
-                        <TextBlock Style="{ThemeResource ListTitleStyle}" Text="Edit" />
-                    </StackPanel>
-                    <FontIcon
-                            Grid.Column="2"
-                            VerticalAlignment="Center"
-                            FontSize="32"
                             Glyph="&#xE74D;" />
                     <StackPanel
-                            Grid.Column="3"
+                            Grid.Column="1"
                             Margin="{StaticResource SmallLeftMargin}"
                             VerticalAlignment="Center" >
                         <TextBlock Style="{ThemeResource ListTitleStyle}" Text="Delete" />

@@ -46,7 +46,12 @@ namespace QuarterbackRating
 
         private ActivationService CreateActivationService()
         {
-            return new ActivationService(this, typeof(Views.QuarterbackPage));
+            return new ActivationService(this, typeof(Views.AddPage), new Lazy<UIElement>(CreateShell));
+        }
+
+        private UIElement CreateShell()
+        {
+            return new Views.ShellPage();
         }
     }
 }

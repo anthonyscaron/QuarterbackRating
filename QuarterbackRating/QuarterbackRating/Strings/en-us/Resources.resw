@@ -125,6 +125,10 @@
     <value>QuarterbackRating</value>
     <comment>Application description</comment>
   </data>
+  <data name="Shell_Add.Content" xml:space="preserve">
+    <value>Add</value>
+    <comment>Navigation view item name for Add</comment>
+  </data>
   <data name="Quarterback_NoSelection.Text" xml:space="preserve">
     <value>Select an item from the list.</value>
     <comment>No selection text for Quarterback</comment>
@@ -132,5 +136,9 @@
   <data name="Quarterback.ListHeader" xml:space="preserve">
     <value>Quarterback</value>
     <comment>Title for QuarterbackPage</comment>
+  </data>
+  <data name="Shell_Quarterback.Content" xml:space="preserve">
+    <value>Quarterback</value>
+    <comment>Navigation view item name for Quarterback</comment>
   </data>
 </root>

@@ -1,7 +1,0 @@
-C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating.Tests.MSTest\obj\x86\Debug\QuarterbackRating.Tests.MSTest.csproj.AssemblyReference.cache
-C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating.Tests.MSTest\obj\x86\Debug\UnitTestApp.g.i.cs
-C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating.Tests.MSTest\obj\x86\Debug\UnitTestApp.g.cs
-C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating.Tests.MSTest\obj\x86\Debug\XamlTypeInfo.g.cs
-C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating.Tests.MSTest\obj\x86\Debug\UnitTestApp.xaml
-C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating.Tests.MSTest\obj\x86\Debug\UnitTestApp.xbf
-C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating.Tests.MSTest\obj\x86\Debug\XamlSaveStateFile.xml

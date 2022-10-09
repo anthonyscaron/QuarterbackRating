@@ -3,7 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using QuarterbackRating.Core.Models;
+
 using QuarterbackRating.Core.Services;
 
 namespace QuarterbackRating.Core.Tests.MSTest

@@ -8,11 +8,11 @@
   IgnorableNamespaces="uap mp genTemplate">
 
   <Identity
-    Name="41948DFC-FAD3-455D-98AC-CCFC9E3E6C12"
+    Name="12A8B957-0534-44CF-A3CD-7D6CE07DBA70"
     Publisher="CN=antho"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="41948DFC-FAD3-455D-98AC-CCFC9E3E6C12" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="12A8B957-0534-44CF-A3CD-7D6CE07DBA70" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>QuarterbackRating</DisplayName>
@@ -55,7 +55,7 @@
     <genTemplate:Item Name="generator" Value="Windows Template Studio"/>
     <genTemplate:Item Name="wizardVersion" Version="v4.1.21179.1" />
     <genTemplate:Item Name="templatesVersion" Version="v4.1.21179.1" />
-    <genTemplate:Item Name="projectType" Value="Blank" />
+    <genTemplate:Item Name="projectType" Value="SplitView" />
     <genTemplate:Item Name="framework" Value="MVVMToolkit" />
     <genTemplate:Item Name="platform" Value="Uwp" />
   </genTemplate:Metadata>
