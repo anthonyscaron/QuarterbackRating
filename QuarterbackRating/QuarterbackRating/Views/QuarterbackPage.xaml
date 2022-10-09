@@ -60,7 +60,7 @@
                     x:Name="headerText"
                     VerticalAlignment="Center"
                     Style="{StaticResource ListTitleStyle}"
-                    Text="{Binding}" />
+                    Text="Saved Quarterbacks" />
             </Grid>
         </DataTemplate>
     </Page.Resources>

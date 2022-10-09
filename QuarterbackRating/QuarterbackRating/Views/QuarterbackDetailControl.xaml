@@ -86,21 +86,41 @@
                         <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="{x:Bind ListMenuItem.Interceptions, Mode=OneWay}" />
                     </StackPanel>
                 </Grid>
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <FontIcon
-                            VerticalAlignment="Center"
-                            FontSize="32"
-                            Glyph="&#xE74D;" />
-                    <StackPanel
-                            Grid.Column="1"
-                            Margin="{StaticResource SmallLeftMargin}"
-                            VerticalAlignment="Center" >
-                        <TextBlock Style="{ThemeResource ListTitleStyle}" Text="Delete" />
-                    </StackPanel>
+                <Grid HorizontalAlignment="Left" Margin="0,0,0,20">
+                    <GridView>
+                        <GridView.ItemContainerStyle>
+                            <Style TargetType="GridViewItem">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="GridViewItem">
+                                            <ListViewItemPresenter
+                                                        SelectedBackground="Transparent"
+                                                        SelectedPointerOverBackground="Transparent"
+                                                        PressedBackground="Transparent"
+                                                        SelectedPressedBackground="Transparent"
+                                                        />
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </GridView.ItemContainerStyle>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <FontIcon
+                                    VerticalAlignment="Center"
+                                    FontSize="32"
+                                    Glyph="&#xE74D;" />
+                            <StackPanel
+                                        Grid.Column="1"
+                                        Margin="{StaticResource SmallLeftMargin}"
+                                        VerticalAlignment="Center" >
+                                <TextBlock Style="{ThemeResource ListTitleStyle}" Text="Delete" />
+                            </StackPanel>
+                        </Grid>
+                    </GridView>
                 </Grid>
             </StackPanel>
         </Grid>
