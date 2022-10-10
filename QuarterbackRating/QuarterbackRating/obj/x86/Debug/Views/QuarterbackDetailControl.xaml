@@ -23,7 +23,7 @@
                     VerticalAlignment="Center"
                     FontSize="48"
                     Glyph="&#xE77B;" />
-                    <TextBlock x:ConnectionId='9'
+                    <TextBlock x:ConnectionId='11'
                     Margin="{StaticResource SmallLeftMargin}"
                     VerticalAlignment="Center"
                                                                   
@@ -48,59 +48,79 @@
                         <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Rating: " />
                     </StackPanel>
                     <StackPanel Grid.Column="1" Margin="20,0,0,20">
-                        <TextBlock x:ConnectionId='8' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                  />
+                        <TextBlock x:ConnectionId='10' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                  />
                     </StackPanel>
 
                     <StackPanel Grid.Row="1" Margin="0,0,0,20">
                         <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Pass Attempts: " />
                     </StackPanel>
                     <StackPanel Grid.Row="1" Grid.Column="1" Margin="20,0,0,20">
-                        <TextBlock x:ConnectionId='7' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                        />
+                        <TextBlock x:ConnectionId='9' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                        />
                     </StackPanel>
 
                     <StackPanel Grid.Row="2" Margin="0,0,0,20">
                         <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Pass Completions: " />
                     </StackPanel>
                     <StackPanel Grid.Row="2" Grid.Column="1" Margin="20,0,0,20">
-                        <TextBlock x:ConnectionId='6' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                           />
+                        <TextBlock x:ConnectionId='8' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                           />
                     </StackPanel>
 
                     <StackPanel Grid.Row="3" Margin="0,0,0,20">
                         <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Passing Yards: " />
                     </StackPanel>
                     <StackPanel Grid.Row="3" Grid.Column="1" Margin="20,0,0,20">
-                        <TextBlock x:ConnectionId='5' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                        />
+                        <TextBlock x:ConnectionId='7' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                        />
                     </StackPanel>
 
                     <StackPanel Grid.Row="4" Margin="0,0,0,20">
                         <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Passing Touchdowns: " />
                     </StackPanel>
                     <StackPanel Grid.Row="4" Grid.Column="1" Margin="20,0,0,20" VerticalAlignment="Center">
-                        <TextBlock x:ConnectionId='4' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                      />
+                        <TextBlock x:ConnectionId='6' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                      />
                     </StackPanel>
 
                     <StackPanel Grid.Row="5" Margin="0,0,0,20">
                         <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Interceptions: " />
                     </StackPanel>
                     <StackPanel Grid.Row="5" Grid.Column="1" Margin="20,0,0,20">
-                        <TextBlock x:ConnectionId='3' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                         />
+                        <TextBlock x:ConnectionId='5' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                         />
                     </StackPanel>
                 </Grid>
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <FontIcon
-                            VerticalAlignment="Center"
-                            FontSize="32"
-                            Glyph="&#xE74D;" />
-                    <StackPanel
-                            Grid.Column="1"
-                            Margin="{StaticResource SmallLeftMargin}"
-                            VerticalAlignment="Center" >
-                        <TextBlock Style="{ThemeResource ListTitleStyle}" Text="Delete" />
-                    </StackPanel>
+                <Grid HorizontalAlignment="Left" Margin="0,0,0,20">
+                    <GridView>
+                        <GridView.ItemContainerStyle>
+                            <Style TargetType="GridViewItem">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="GridViewItem">
+                                            <ListViewItemPresenter
+                                                        SelectedBackground="Transparent"
+                                                        SelectedPointerOverBackground="Transparent"
+                                                        PressedBackground="Transparent"
+                                                        SelectedPressedBackground="Transparent"
+                                                        />
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </GridView.ItemContainerStyle>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <FontIcon
+                                    VerticalAlignment="Center"
+                                    FontSize="32"
+                                    Glyph="&#xE74D;" />
+                            <StackPanel
+                                        Grid.Column="1"
+                                        Margin="{StaticResource SmallLeftMargin}"
+                                        VerticalAlignment="Center" >
+                                <TextBlock Style="{ThemeResource ListTitleStyle}" Text="Delete" />
+                            </StackPanel>
+                        </Grid>
+                    </GridView>
                 </Grid>
             </StackPanel>
         </Grid>

@@ -10,12 +10,12 @@
         <Grid
             Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
             <ScrollViewer x:ConnectionId='3'
-        Name="ForegroundElement"
-        Padding="{StaticResource DetailPageMargin}"
-        HorizontalAlignment="Stretch"
-        Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
-        VerticalScrollMode="Enabled"
-        IsTabStop="True">
+                Name="ForegroundElement"
+                Padding="{StaticResource DetailPageMargin}"
+                HorizontalAlignment="Stretch"
+                Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+                VerticalScrollMode="Enabled"
+                IsTabStop="True">
                 <Grid>
                     <StackPanel HorizontalAlignment="Left">
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="0,0,0,20">
@@ -27,7 +27,8 @@
                             <TextBlock
                                 Margin="{StaticResource SmallLeftMargin}"
                                 VerticalAlignment="Center"
-                                Style="{ThemeResource TitleTextBlockStyle}" />
+                                Style="{ThemeResource TitleTextBlockStyle}"
+                                Text="Quarterback Details"/>
                         </StackPanel>
                         <Grid VerticalAlignment="Center" HorizontalAlignment="Left">
                             <Grid.RowDefinitions>
@@ -45,62 +46,149 @@
                             </Grid.ColumnDefinitions>
 
                             <StackPanel Margin="0,0,0,20">
-                                <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Rating: " />
+                                <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Name: " />
                             </StackPanel>
                             <StackPanel Grid.Column="1" Margin="20,0,0,20">
-                                <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="" />
+                                <TextBox x:ConnectionId='20' x:Name="NameBox" Text="" />
                             </StackPanel>
 
                             <StackPanel Grid.Row="1" Margin="0,0,0,20">
                                 <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Pass Attempts: " />
                             </StackPanel>
                             <StackPanel Grid.Row="1" Grid.Column="1" Margin="20,0,0,20">
-                                <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="" />
+                                <TextBox x:ConnectionId='19' x:Name="AttemptsBox" Text="" />
                             </StackPanel>
 
                             <StackPanel Grid.Row="2" Margin="0,0,0,20">
                                 <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Pass Completions: " />
                             </StackPanel>
                             <StackPanel Grid.Row="2" Grid.Column="1" Margin="20,0,0,20">
-                                <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="" />
+                                <TextBox x:ConnectionId='18' x:Name="CompletionsBox" Text="" />
                             </StackPanel>
 
                             <StackPanel Grid.Row="3" Margin="0,0,0,20">
                                 <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Passing Yards: " />
                             </StackPanel>
                             <StackPanel Grid.Row="3" Grid.Column="1" Margin="20,0,0,20">
-                                <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="" />
+                                <TextBox x:ConnectionId='17' x:Name="YardsBox" Text="" />
                             </StackPanel>
 
                             <StackPanel Grid.Row="4" Margin="0,0,0,20">
                                 <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Passing Touchdowns: " />
                             </StackPanel>
                             <StackPanel Grid.Row="4" Grid.Column="1" Margin="20,0,0,20" VerticalAlignment="Center">
-                                <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="" />
+                                <TextBox x:ConnectionId='16' x:Name="TouchdownsBox" Text="" />
                             </StackPanel>
 
                             <StackPanel Grid.Row="5" Margin="0,0,0,20">
                                 <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Interceptions: " />
                             </StackPanel>
                             <StackPanel Grid.Row="5" Grid.Column="1" Margin="20,0,0,20">
-                                <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="" />
+                                <TextBox x:ConnectionId='15' x:Name="InterceptionsBox" Text="" />
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="6" Margin="0,0,0,20">
+                                <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Rating: " />
+                            </StackPanel>
+                            <StackPanel Grid.Row="6" Grid.Column="1" Margin="20,0,0,20">
+                                <TextBlock x:ConnectionId='14' x:Name="RatingBox" Style="{StaticResource DetailBodyBaseMediumStyle}" Text="PENDING" />
                             </StackPanel>
                         </Grid>
-                        <Grid>
+                        <Grid HorizontalAlignment="Left" Margin="0,0,0,20">
+                            <GridView x:ConnectionId='11' x:Name="CalculateButton" IsItemClickEnabled="True"                                      >
+                                <GridView.ItemContainerStyle>
+                                    <Style TargetType="GridViewItem">
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="GridViewItem">
+                                                    <ListViewItemPresenter
+                                                        SelectedBackground="Transparent"
+                                                        SelectedPointerOverBackground="Transparent"
+                                                        PressedBackground="Transparent"
+                                                        SelectedPressedBackground="Transparent"
+                                                        />
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </GridView.ItemContainerStyle>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <FontIcon
+                                    VerticalAlignment="Center"
+                                    FontSize="32"
+                                    Glyph="&#xE8EF;" />
+                                    <StackPanel
+                                        Grid.Column="1"
+                                        Margin="{StaticResource SmallLeftMargin}"
+                                        VerticalAlignment="Center" >    
+                                        <TextBlock Style="{ThemeResource ListTitleStyle}" Text="Calculate Rating" />
+                                    </StackPanel>
+                                </Grid>
+                            </GridView>
+                        </Grid>
+                        <Grid HorizontalAlignment="Left" Margin="0,0,0,20">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <FontIcon
-                                VerticalAlignment="Center"
-                                FontSize="32"
-                                Glyph="&#xE74D;" />
-                            <StackPanel
-                                Grid.Column="1"
-                                Margin="{StaticResource SmallLeftMargin}"
-                                VerticalAlignment="Center" >
-                                <TextBlock Style="{ThemeResource ListTitleStyle}" Text="Calculate Rating" />
+                            <FontIcon x:ConnectionId='8'
+                                    x:Name="RatingConfirmationIcon"
+                                    Visibility="Collapsed"
+                                    VerticalAlignment="Center"
+                                    FontSize="32"
+                                    Glyph="&#xE946;" />
+                            <StackPanel x:ConnectionId='9'
+                                    x:Name="RatingConfirmation"
+                                    Grid.Column="1"
+                                    Visibility="Collapsed"
+                                    Margin="{StaticResource SmallLeftMargin}"
+                                    VerticalAlignment="Center" >
+                                <TextBlock x:ConnectionId='10' x:Name="RatingConfirmationBox" Style="{StaticResource DetailSubTitleStyle}" Text="" />
                             </StackPanel>
+                        </Grid>
+                        <Grid HorizontalAlignment="Left" Margin="0,0,0,20">
+                            <GridView>
+                                <GridView.ItemContainerStyle>
+                                    <Style TargetType="GridViewItem">
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="GridViewItem">
+                                                    <ListViewItemPresenter
+                                                        SelectedBackground="Transparent"
+                                                        SelectedPointerOverBackground="Transparent"
+                                                        PressedBackground="Transparent"
+                                                        SelectedPressedBackground="Transparent"
+                                                        />
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </GridView.ItemContainerStyle>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <FontIcon x:ConnectionId='6'
+                                        x:Name="SaveButtonIcon"
+                                        VerticalAlignment="Center"
+                                        Visibility="Collapsed"
+                                        FontSize="32"
+                                        Glyph="&#xE74E;" />
+                                    <StackPanel x:ConnectionId='7'
+                                        x:Name="SaveButton"
+                                        Grid.Column="1"
+                                        Visibility="Collapsed"
+                                        Margin="{StaticResource SmallLeftMargin}"
+                                        VerticalAlignment="Center" >
+                                        <TextBlock Style="{ThemeResource ListTitleStyle}" Text="Save Quarterback" />
+                                    </StackPanel>
+                                </Grid>
+                            </GridView>
                         </Grid>
                     </StackPanel>
                 </Grid>
