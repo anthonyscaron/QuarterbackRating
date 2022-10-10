@@ -3,7 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+using QuarterbackRating.Core.Models;
 using QuarterbackRating.Core.Services;
 
 namespace QuarterbackRating.Core.Tests.MSTest
@@ -28,14 +28,14 @@ namespace QuarterbackRating.Core.Tests.MSTest
             var quarterbacks = QuarterbackRepository.ReadAll();
 
             Assert.AreEqual(6, quarterbacks.Count);
-            Assert.AreEqual(6, quarterbacks[5].Id);
-            Assert.AreEqual("Jalen Hurts", quarterbacks[5].Name);
-            Assert.AreEqual(123, quarterbacks[5].PassAttempts);
-            Assert.AreEqual(82, quarterbacks[5].PassCompletions);
-            Assert.AreEqual(1120, quarterbacks[5].PassingYards);
-            Assert.AreEqual(4, quarterbacks[5].Touchdowns);
-            Assert.AreEqual(2, quarterbacks[5].Interceptions);
-            Assert.AreEqual(99.6M, quarterbacks[5].Rating);
+            Assert.AreEqual(6, quarterbacks[0].Id);
+            Assert.AreEqual("Jalen Hurts", quarterbacks[0].Name);
+            Assert.AreEqual(123, quarterbacks[0].PassAttempts);
+            Assert.AreEqual(82, quarterbacks[0].PassCompletions);
+            Assert.AreEqual(1120, quarterbacks[0].PassingYards);
+            Assert.AreEqual(4, quarterbacks[0].Touchdowns);
+            Assert.AreEqual(2, quarterbacks[0].Interceptions);
+            Assert.AreEqual(99.6M, quarterbacks[0].Rating);
         }
 
         [TestMethod]
@@ -44,14 +44,14 @@ namespace QuarterbackRating.Core.Tests.MSTest
             var quarterbacks = QuarterbackRepository.ReadAll();
 
             Assert.AreEqual(5, quarterbacks.Count);
-            Assert.AreEqual(2, quarterbacks[2].Id);
-            Assert.AreEqual("Lamar Jackson", quarterbacks[2].Name);
-            Assert.AreEqual(117, quarterbacks[2].PassAttempts);
-            Assert.AreEqual(76, quarterbacks[2].PassCompletions);
-            Assert.AreEqual(893, quarterbacks[2].PassingYards);
-            Assert.AreEqual(11, quarterbacks[2].Touchdowns);
-            Assert.AreEqual(4, quarterbacks[2].Interceptions);
-            Assert.AreEqual(105.1M, quarterbacks[2].Rating);
+            Assert.AreEqual(2, quarterbacks[3].Id);
+            Assert.AreEqual("Lamar Jackson", quarterbacks[3].Name);
+            Assert.AreEqual(117, quarterbacks[3].PassAttempts);
+            Assert.AreEqual(76, quarterbacks[3].PassCompletions);
+            Assert.AreEqual(893, quarterbacks[3].PassingYards);
+            Assert.AreEqual(11, quarterbacks[3].Touchdowns);
+            Assert.AreEqual(4, quarterbacks[3].Interceptions);
+            Assert.AreEqual(105.1M, quarterbacks[3].Rating);
         }
 
         [TestMethod]
@@ -105,14 +105,14 @@ namespace QuarterbackRating.Core.Tests.MSTest
             var quarterbacks = result.ToList();
 
             Assert.AreEqual(5, quarterbacks.Count);
-            Assert.AreEqual(2, quarterbacks[2].Id);
-            Assert.AreEqual("Lamar Jackson", quarterbacks[2].Name);
-            Assert.AreEqual(117, quarterbacks[2].PassAttempts);
-            Assert.AreEqual(76, quarterbacks[2].PassCompletions);
-            Assert.AreEqual(893, quarterbacks[2].PassingYards);
-            Assert.AreEqual(11, quarterbacks[2].Touchdowns);
-            Assert.AreEqual(4, quarterbacks[2].Interceptions);
-            Assert.AreEqual(105.1M, quarterbacks[2].Rating);
+            Assert.AreEqual(2, quarterbacks[3].Id);
+            Assert.AreEqual("Lamar Jackson", quarterbacks[3].Name);
+            Assert.AreEqual(117, quarterbacks[3].PassAttempts);
+            Assert.AreEqual(76, quarterbacks[3].PassCompletions);
+            Assert.AreEqual(893, quarterbacks[3].PassingYards);
+            Assert.AreEqual(11, quarterbacks[3].Touchdowns);
+            Assert.AreEqual(4, quarterbacks[3].Interceptions);
+            Assert.AreEqual(105.1M, quarterbacks[3].Rating);
         }
 
         [TestMethod]

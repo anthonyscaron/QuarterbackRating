@@ -30,6 +30,16 @@
                                 Style="{ThemeResource TitleTextBlockStyle}"
                                 Text="Quarterback Details"/>
                         </StackPanel>
+                        
+                        <StackPanel
+                                x:Name="ErrorAlert"
+                                Grid.Column="1"
+                                Visibility="Collapsed"
+                                Margin="0,0,0,20"
+                                VerticalAlignment="Center" >
+                            <TextBlock Foreground="Red" Style="{ThemeResource ListTitleStyle}" Text="Please Enter Valid Data" />
+                        </StackPanel>
+                        
                         <Grid VerticalAlignment="Center" HorizontalAlignment="Left">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*"/>
@@ -46,42 +56,42 @@
                             </Grid.ColumnDefinitions>
 
                             <StackPanel Margin="0,0,0,20">
-                                <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Name: " />
+                                <TextBlock x:Name="NameBoxLabel" Style="{StaticResource DetailSubTitleStyle}" Text="Name: " />
                             </StackPanel>
                             <StackPanel Grid.Column="1" Margin="20,0,0,20">
                                 <TextBox x:Name="NameBox" Text="" />
                             </StackPanel>
 
                             <StackPanel Grid.Row="1" Margin="0,0,0,20">
-                                <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Pass Attempts: " />
+                                <TextBlock x:Name="AttemptsBoxLabel" Style="{StaticResource DetailSubTitleStyle}" Text="Pass Attempts: " />
                             </StackPanel>
                             <StackPanel Grid.Row="1" Grid.Column="1" Margin="20,0,0,20">
                                 <TextBox x:Name="AttemptsBox" Text="" />
                             </StackPanel>
 
                             <StackPanel Grid.Row="2" Margin="0,0,0,20">
-                                <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Pass Completions: " />
+                                <TextBlock x:Name="CompletionsBoxLabel" Style="{StaticResource DetailSubTitleStyle}" Text="Pass Completions: " />
                             </StackPanel>
                             <StackPanel Grid.Row="2" Grid.Column="1" Margin="20,0,0,20">
                                 <TextBox x:Name="CompletionsBox" Text="" />
                             </StackPanel>
 
                             <StackPanel Grid.Row="3" Margin="0,0,0,20">
-                                <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Passing Yards: " />
+                                <TextBlock x:Name="YardsBoxLabel" Style="{StaticResource DetailSubTitleStyle}" Text="Passing Yards: " />
                             </StackPanel>
                             <StackPanel Grid.Row="3" Grid.Column="1" Margin="20,0,0,20">
                                 <TextBox x:Name="YardsBox" Text="" />
                             </StackPanel>
 
                             <StackPanel Grid.Row="4" Margin="0,0,0,20">
-                                <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Passing Touchdowns: " />
+                                <TextBlock x:Name="TouchdownsBoxLabel" Style="{StaticResource DetailSubTitleStyle}" Text="Passing Touchdowns: " />
                             </StackPanel>
                             <StackPanel Grid.Row="4" Grid.Column="1" Margin="20,0,0,20" VerticalAlignment="Center">
                                 <TextBox x:Name="TouchdownsBox" Text="" />
                             </StackPanel>
 
                             <StackPanel Grid.Row="5" Margin="0,0,0,20">
-                                <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Interceptions: " />
+                                <TextBlock x:Name="InterceptionsBoxLabel" Style="{StaticResource DetailSubTitleStyle}" Text="Interceptions: " />
                             </StackPanel>
                             <StackPanel Grid.Row="5" Grid.Column="1" Margin="20,0,0,20">
                                 <TextBox x:Name="InterceptionsBox" Text="" />

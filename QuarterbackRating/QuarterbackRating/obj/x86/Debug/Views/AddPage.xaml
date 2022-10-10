@@ -30,6 +30,16 @@
                                 Style="{ThemeResource TitleTextBlockStyle}"
                                 Text="Quarterback Details"/>
                         </StackPanel>
+                        
+                        <StackPanel x:ConnectionId='4'
+                                x:Name="ErrorAlert"
+                                Grid.Column="1"
+                                Visibility="Collapsed"
+                                Margin="0,0,0,20"
+                                VerticalAlignment="Center" >
+                            <TextBlock Foreground="Red" Style="{ThemeResource ListTitleStyle}" Text="Please Enter Valid Data" />
+                        </StackPanel>
+                        
                         <Grid VerticalAlignment="Center" HorizontalAlignment="Left">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*"/>
@@ -46,56 +56,56 @@
                             </Grid.ColumnDefinitions>
 
                             <StackPanel Margin="0,0,0,20">
-                                <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Name: " />
+                                <TextBlock x:ConnectionId='27' x:Name="NameBoxLabel" Style="{StaticResource DetailSubTitleStyle}" Text="Name: " />
                             </StackPanel>
                             <StackPanel Grid.Column="1" Margin="20,0,0,20">
-                                <TextBox x:ConnectionId='20' x:Name="NameBox" Text="" />
+                                <TextBox x:ConnectionId='26' x:Name="NameBox" Text="" />
                             </StackPanel>
 
                             <StackPanel Grid.Row="1" Margin="0,0,0,20">
-                                <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Pass Attempts: " />
+                                <TextBlock x:ConnectionId='25' x:Name="AttemptsBoxLabel" Style="{StaticResource DetailSubTitleStyle}" Text="Pass Attempts: " />
                             </StackPanel>
                             <StackPanel Grid.Row="1" Grid.Column="1" Margin="20,0,0,20">
-                                <TextBox x:ConnectionId='19' x:Name="AttemptsBox" Text="" />
+                                <TextBox x:ConnectionId='24' x:Name="AttemptsBox" Text="" />
                             </StackPanel>
 
                             <StackPanel Grid.Row="2" Margin="0,0,0,20">
-                                <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Pass Completions: " />
+                                <TextBlock x:ConnectionId='23' x:Name="CompletionsBoxLabel" Style="{StaticResource DetailSubTitleStyle}" Text="Pass Completions: " />
                             </StackPanel>
                             <StackPanel Grid.Row="2" Grid.Column="1" Margin="20,0,0,20">
-                                <TextBox x:ConnectionId='18' x:Name="CompletionsBox" Text="" />
+                                <TextBox x:ConnectionId='22' x:Name="CompletionsBox" Text="" />
                             </StackPanel>
 
                             <StackPanel Grid.Row="3" Margin="0,0,0,20">
-                                <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Passing Yards: " />
+                                <TextBlock x:ConnectionId='21' x:Name="YardsBoxLabel" Style="{StaticResource DetailSubTitleStyle}" Text="Passing Yards: " />
                             </StackPanel>
                             <StackPanel Grid.Row="3" Grid.Column="1" Margin="20,0,0,20">
-                                <TextBox x:ConnectionId='17' x:Name="YardsBox" Text="" />
+                                <TextBox x:ConnectionId='20' x:Name="YardsBox" Text="" />
                             </StackPanel>
 
                             <StackPanel Grid.Row="4" Margin="0,0,0,20">
-                                <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Passing Touchdowns: " />
+                                <TextBlock x:ConnectionId='19' x:Name="TouchdownsBoxLabel" Style="{StaticResource DetailSubTitleStyle}" Text="Passing Touchdowns: " />
                             </StackPanel>
                             <StackPanel Grid.Row="4" Grid.Column="1" Margin="20,0,0,20" VerticalAlignment="Center">
-                                <TextBox x:ConnectionId='16' x:Name="TouchdownsBox" Text="" />
+                                <TextBox x:ConnectionId='18' x:Name="TouchdownsBox" Text="" />
                             </StackPanel>
 
                             <StackPanel Grid.Row="5" Margin="0,0,0,20">
-                                <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Interceptions: " />
+                                <TextBlock x:ConnectionId='17' x:Name="InterceptionsBoxLabel" Style="{StaticResource DetailSubTitleStyle}" Text="Interceptions: " />
                             </StackPanel>
                             <StackPanel Grid.Row="5" Grid.Column="1" Margin="20,0,0,20">
-                                <TextBox x:ConnectionId='15' x:Name="InterceptionsBox" Text="" />
+                                <TextBox x:ConnectionId='16' x:Name="InterceptionsBox" Text="" />
                             </StackPanel>
 
                             <StackPanel Grid.Row="6" Margin="0,0,0,20">
                                 <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Rating: " />
                             </StackPanel>
                             <StackPanel Grid.Row="6" Grid.Column="1" Margin="20,0,0,20">
-                                <TextBlock x:ConnectionId='14' x:Name="RatingBox" Style="{StaticResource DetailBodyBaseMediumStyle}" Text="PENDING" />
+                                <TextBlock x:ConnectionId='15' x:Name="RatingBox" Style="{StaticResource DetailBodyBaseMediumStyle}" Text="PENDING" />
                             </StackPanel>
                         </Grid>
                         <Grid HorizontalAlignment="Left" Margin="0,0,0,20">
-                            <GridView x:ConnectionId='11' x:Name="CalculateButton" IsItemClickEnabled="True"                                      >
+                            <GridView x:ConnectionId='12' x:Name="CalculateButton" IsItemClickEnabled="True"                                      >
                                 <GridView.ItemContainerStyle>
                                     <Style TargetType="GridViewItem">
                                         <Setter Property="Template">
@@ -135,19 +145,19 @@
                                 <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <FontIcon x:ConnectionId='8'
+                            <FontIcon x:ConnectionId='9'
                                     x:Name="RatingConfirmationIcon"
                                     Visibility="Collapsed"
                                     VerticalAlignment="Center"
                                     FontSize="32"
                                     Glyph="&#xE946;" />
-                            <StackPanel x:ConnectionId='9'
+                            <StackPanel x:ConnectionId='10'
                                     x:Name="RatingConfirmation"
                                     Grid.Column="1"
                                     Visibility="Collapsed"
                                     Margin="{StaticResource SmallLeftMargin}"
                                     VerticalAlignment="Center" >
-                                <TextBlock x:ConnectionId='10' x:Name="RatingConfirmationBox" Style="{StaticResource DetailSubTitleStyle}" Text="" />
+                                <TextBlock x:ConnectionId='11' x:Name="RatingConfirmationBox" Style="{StaticResource DetailSubTitleStyle}" Text="" />
                             </StackPanel>
                         </Grid>
                         <Grid HorizontalAlignment="Left" Margin="0,0,0,20">
@@ -173,13 +183,13 @@
                                         <ColumnDefinition Width="Auto"/>
                                         <ColumnDefinition Width="*"/>
                                     </Grid.ColumnDefinitions>
-                                    <FontIcon x:ConnectionId='6'
+                                    <FontIcon x:ConnectionId='7'
                                         x:Name="SaveButtonIcon"
                                         VerticalAlignment="Center"
                                         Visibility="Collapsed"
                                         FontSize="32"
                                         Glyph="&#xE74E;" />
-                                    <StackPanel x:ConnectionId='7'
+                                    <StackPanel x:ConnectionId='8'
                                         x:Name="SaveButton"
                                         Grid.Column="1"
                                         Visibility="Collapsed"
