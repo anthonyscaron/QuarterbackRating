@@ -118,15 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppDisplayName" xml:space="preserve">
-    <value>QuarterbackRating</value>
+    <value>Quarterback Rating Calculator</value>
     <comment>Application display name</comment>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>QuarterbackRating</value>
+    <value>Quarterback Rating Calculator</value>
     <comment>Application description</comment>
   </data>
   <data name="Shell_Add.Content" xml:space="preserve">
-    <value>Add</value>
+    <value>Add Quarterback</value>
     <comment>Navigation view item name for Add</comment>
   </data>
   <data name="Quarterback_NoSelection.Text" xml:space="preserve">
@@ -134,11 +134,11 @@
     <comment>No selection text for Quarterback</comment>
   </data>
   <data name="Quarterback.ListHeader" xml:space="preserve">
-    <value>Quarterback</value>
+    <value>Quarterbacks</value>
     <comment>Title for QuarterbackPage</comment>
   </data>
   <data name="Shell_Quarterback.Content" xml:space="preserve">
-    <value>Quarterback</value>
+    <value>View Quarterbacks</value>
     <comment>Navigation view item name for Quarterback</comment>
   </data>
 </root>

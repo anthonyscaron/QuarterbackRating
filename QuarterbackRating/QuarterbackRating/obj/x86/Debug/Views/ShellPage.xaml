@@ -34,7 +34,7 @@
             Edit String/en-US/Resources.resw: Add a menu item title for each page
             -->
             <winui:NavigationViewItem x:Uid="Shell_Add" Icon="Add" helpers:NavHelper.NavigateTo="views:AddPage" />
-            <winui:NavigationViewItem x:Uid="Shell_Quarterback" Icon="Contact" helpers:NavHelper.NavigateTo="views:QuarterbackPage" />
+            <winui:NavigationViewItem x:Uid="Shell_Quarterback" Icon="People" helpers:NavHelper.NavigateTo="views:QuarterbackPage" />
         </winui:NavigationView.MenuItems>
         <i:Interaction.Behaviors>
             <behaviors:NavigationViewHeaderBehavior x:ConnectionId='4'

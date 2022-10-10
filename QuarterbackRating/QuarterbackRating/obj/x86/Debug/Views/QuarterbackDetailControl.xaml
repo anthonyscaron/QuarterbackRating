@@ -19,15 +19,23 @@
             <StackPanel HorizontalAlignment="Left">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="0,0,0,20">
                     <FontIcon
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    FontSize="48"
-                    Glyph="&#xE77B;" />
-                    <TextBlock x:ConnectionId='11'
-                    Margin="{StaticResource SmallLeftMargin}"
-                    VerticalAlignment="Center"
-                                                                  
-                    Style="{ThemeResource TitleTextBlockStyle}" />
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        FontSize="48"
+                        Glyph="&#xE77B;" />
+                    <TextBlock x:ConnectionId='12'
+                        x:Name="NameBox"
+                        Margin="{StaticResource SmallLeftMargin}"
+                        VerticalAlignment="Center"
+                                                                      
+                        Style="{ThemeResource TitleTextBlockStyle}" />
+                    <TextBlock x:ConnectionId='13'
+                        x:Name="IdBox"
+                        Visibility="Collapsed"
+                        Margin="{StaticResource SmallLeftMargin}"
+                        VerticalAlignment="Center"
+                                                                    
+                        Style="{ThemeResource TitleTextBlockStyle}" />
                 </StackPanel>
                 <Grid VerticalAlignment="Center" HorizontalAlignment="Left">
                     <Grid.RowDefinitions>
@@ -48,46 +56,46 @@
                         <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Rating: " />
                     </StackPanel>
                     <StackPanel Grid.Column="1" Margin="20,0,0,20">
-                        <TextBlock x:ConnectionId='10' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                  />
+                        <TextBlock x:ConnectionId='11' x:Name="RatingBox" Style="{StaticResource DetailBodyBaseMediumStyle}"                                                  />
                     </StackPanel>
 
                     <StackPanel Grid.Row="1" Margin="0,0,0,20">
                         <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Pass Attempts: " />
                     </StackPanel>
                     <StackPanel Grid.Row="1" Grid.Column="1" Margin="20,0,0,20">
-                        <TextBlock x:ConnectionId='9' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                        />
+                        <TextBlock x:ConnectionId='10' x:Name="AttemptsBox" Style="{StaticResource DetailBodyBaseMediumStyle}"                                                        />
                     </StackPanel>
 
                     <StackPanel Grid.Row="2" Margin="0,0,0,20">
                         <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Pass Completions: " />
                     </StackPanel>
                     <StackPanel Grid.Row="2" Grid.Column="1" Margin="20,0,0,20">
-                        <TextBlock x:ConnectionId='8' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                           />
+                        <TextBlock x:ConnectionId='9' x:Name="CompletionsBox" Style="{StaticResource DetailBodyBaseMediumStyle}"                                                           />
                     </StackPanel>
 
                     <StackPanel Grid.Row="3" Margin="0,0,0,20">
                         <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Passing Yards: " />
                     </StackPanel>
                     <StackPanel Grid.Row="3" Grid.Column="1" Margin="20,0,0,20">
-                        <TextBlock x:ConnectionId='7' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                        />
+                        <TextBlock x:ConnectionId='8' x:Name="YardsBox" Style="{StaticResource DetailBodyBaseMediumStyle}"                                                        />
                     </StackPanel>
 
                     <StackPanel Grid.Row="4" Margin="0,0,0,20">
                         <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Passing Touchdowns: " />
                     </StackPanel>
                     <StackPanel Grid.Row="4" Grid.Column="1" Margin="20,0,0,20" VerticalAlignment="Center">
-                        <TextBlock x:ConnectionId='6' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                      />
+                        <TextBlock x:ConnectionId='7' x:Name="TouchdownsBox" Style="{StaticResource DetailBodyBaseMediumStyle}"                                                      />
                     </StackPanel>
 
                     <StackPanel Grid.Row="5" Margin="0,0,0,20">
                         <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Interceptions: " />
                     </StackPanel>
                     <StackPanel Grid.Row="5" Grid.Column="1" Margin="20,0,0,20">
-                        <TextBlock x:ConnectionId='5' Style="{StaticResource DetailBodyBaseMediumStyle}"                                                         />
+                        <TextBlock x:ConnectionId='6' x:Name="InterceptionsBox" Style="{StaticResource DetailBodyBaseMediumStyle}"                                                         />
                     </StackPanel>
                 </Grid>
                 <Grid HorizontalAlignment="Left" Margin="0,0,0,20">
-                    <GridView>
+                    <GridView x:ConnectionId='3' x:Name="DeleteButton" IsItemClickEnabled="True"                                   >
                         <GridView.ItemContainerStyle>
                             <Style TargetType="GridViewItem">
                                 <Setter Property="Template">
