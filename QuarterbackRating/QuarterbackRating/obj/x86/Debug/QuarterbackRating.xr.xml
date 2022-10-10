@@ -44,6 +44,7 @@
       <RootProperty Name="Visibility" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="TextAlignment" />
+      <RootProperty Name="Padding" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="VerticalAlignment" />

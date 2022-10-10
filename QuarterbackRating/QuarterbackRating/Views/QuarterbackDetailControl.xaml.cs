@@ -2,6 +2,7 @@
 
 using QuarterbackRating.Core.Models;
 using QuarterbackRating.Core.Services;
+using QuarterbackRating.Services;
 using QuarterbackRating.ViewModels;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -44,8 +45,8 @@ namespace QuarterbackRating.Views
             QuarterbackRepository repo = new QuarterbackRepository();
             repo.Delete(quarterback);
 
-            Frame frame = Window.Current.Content as Frame;
-            frame.Navigate(typeof(AddPage));
+            var frame = NavigationService.Frame;
+            frame.Navigate(typeof(Views.QuarterbackPage));
         }
     }
 }

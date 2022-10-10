@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-10-10T19:50:45.558</Modified>
+      <Modified>2022-10-10T20:10:39.752</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\QuarterbackRating.exe">
       <PackagePath>entrypoint\QuarterbackRating.exe</PackagePath>
-      <Modified>2022-10-10T19:50:43.418</Modified>
+      <Modified>2022-10-10T20:10:38.758</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\antho\.nuget\packages\microsoft.web.webview2\1.0.1264.42\build\..\runtimes\win-x86\native_uap\Microsoft.Web.WebView2.Core.dll">
       <PackagePath>Microsoft.Web.WebView2.Core.dll</PackagePath>
@@ -222,47 +222,47 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\QuarterbackRating.xr.xml">
       <PackagePath>QuarterbackRating.xr.xml</PackagePath>
-      <Modified>2022-10-10T19:12:37.480</Modified>
+      <Modified>2022-10-10T20:05:16.337</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-10-10T19:50:43.202</Modified>
+      <Modified>2022-10-10T20:10:08.882</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Styles\Page.xbf">
       <PackagePath>Styles\Page.xbf</PackagePath>
-      <Modified>2022-10-10T19:50:43.201</Modified>
+      <Modified>2022-10-10T20:10:08.880</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Styles\_Colors.xbf">
       <PackagePath>Styles\_Colors.xbf</PackagePath>
-      <Modified>2022-10-10T19:50:43.202</Modified>
+      <Modified>2022-10-10T20:10:08.880</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Styles\_FontSizes.xbf">
       <PackagePath>Styles\_FontSizes.xbf</PackagePath>
-      <Modified>2022-10-10T19:50:43.202</Modified>
+      <Modified>2022-10-10T20:10:08.881</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Styles\_Thickness.xbf">
       <PackagePath>Styles\_Thickness.xbf</PackagePath>
-      <Modified>2022-10-10T19:50:43.202</Modified>
+      <Modified>2022-10-10T20:10:08.881</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Styles\TextBlock.xbf">
       <PackagePath>Styles\TextBlock.xbf</PackagePath>
-      <Modified>2022-10-10T19:50:43.202</Modified>
+      <Modified>2022-10-10T20:10:08.882</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Views\AddPage.xbf">
       <PackagePath>Views\AddPage.xbf</PackagePath>
-      <Modified>2022-10-10T19:50:43.188</Modified>
+      <Modified>2022-10-10T20:10:08.864</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Views\QuarterbackDetailControl.xbf">
       <PackagePath>Views\QuarterbackDetailControl.xbf</PackagePath>
-      <Modified>2022-10-10T19:50:43.203</Modified>
+      <Modified>2022-10-10T20:10:08.882</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Views\QuarterbackPage.xbf">
       <PackagePath>Views\QuarterbackPage.xbf</PackagePath>
-      <Modified>2022-10-10T19:50:43.203</Modified>
+      <Modified>2022-10-10T20:10:08.883</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Views\ShellPage.xbf">
       <PackagePath>Views\ShellPage.xbf</PackagePath>
-      <Modified>2022-10-10T19:50:43.203</Modified>
+      <Modified>2022-10-10T20:10:08.883</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -278,7 +278,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Core\QuarterbackRating.exe">
       <PackagePath>QuarterbackRating.exe</PackagePath>
-      <Modified>2022-10-10T19:50:45.552</Modified>
+      <Modified>2022-10-10T20:10:39.747</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
