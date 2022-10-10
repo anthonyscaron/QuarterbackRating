@@ -60,6 +60,7 @@ namespace QuarterbackRating.Views
 
             var attemptsIsNumber = Int32.TryParse(attempts, out int attemptsResult);
 
+            // attemptsResult < 1, Need one attempt.
             if (string.IsNullOrEmpty(attempts) || !attemptsIsNumber || attemptsResult < 1)
             {
                 errorsExist = true;
@@ -69,7 +70,8 @@ namespace QuarterbackRating.Views
 
             var completionsIsNumber = Int32.TryParse(completions, out int completionsResult);
 
-            if (string.IsNullOrEmpty(completions) || !completionsIsNumber || completionsResult < 0)
+            // completionsResult > attemptsResult, Can't have more completions than attempts.
+            if (string.IsNullOrEmpty(completions) || !completionsIsNumber || completionsResult < 0 || completionsResult > attemptsResult)
             {
                 errorsExist = true;
                 ErrorAlert.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(true, null, null, null);
@@ -77,8 +79,12 @@ namespace QuarterbackRating.Views
             }
 
             var yardsIsNumber = Int32.TryParse(yards, out int yardsResult);
+            var maxNegativeYards = completionsResult * -99;
+            var maxPositiveYards = completionsResult * 99;
 
-            if (string.IsNullOrEmpty(yards) || !yardsIsNumber || yardsResult < 0)
+            // yardsResult < maxNegativeYards || yardsResult > maxPositiveYards, The max yards any pass can go for are
+            // between -99 and 99 per completion depending on the specific field placement at the time of the completion.
+            if (string.IsNullOrEmpty(yards) || !yardsIsNumber || yardsResult < maxNegativeYards || yardsResult > maxPositiveYards)
             {
                 errorsExist = true;
                 ErrorAlert.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(true, null, null, null);
@@ -87,7 +93,9 @@ namespace QuarterbackRating.Views
 
             var touchdownsIsNumber = Int32.TryParse(touchdowns, out int touchdownsResult);
 
-            if (string.IsNullOrEmpty(touchdowns) || !touchdownsIsNumber || touchdownsResult < 0)
+            // touchdownsResult > completionsResult, Can't have more touchdowns than completions.
+            // touchdownsResult > yardsResult, Can't have more touchdowns than yards because 1 touchdown would be for at least 1 yard.
+            if (string.IsNullOrEmpty(touchdowns) || !touchdownsIsNumber || touchdownsResult < 0 || touchdownsResult > completionsResult || touchdownsResult > yardsResult)
             {
                 errorsExist = true;
                 ErrorAlert.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(true, null, null, null);
@@ -95,8 +103,10 @@ namespace QuarterbackRating.Views
             }
 
             var interceptionsIsNumber = Int32.TryParse(interceptions, out int interceptionsResult);
+            var maxInterceptions = attemptsResult - completionsResult;
 
-            if (string.IsNullOrEmpty(interceptions) || !interceptionsIsNumber || interceptionsResult < 0)
+            // interceptionsResult > maxInterceptions, Can't have more interceptions than non-completion attempts.
+            if (string.IsNullOrEmpty(interceptions) || !interceptionsIsNumber || interceptionsResult < 0 || interceptionsResult > maxInterceptions)
             {
                 errorsExist = true;
                 ErrorAlert.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(true, null, null, null);
