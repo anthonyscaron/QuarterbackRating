@@ -1,4 +1,5 @@
 ﻿using System;
+using QuarterbackRating.Core.Models;
 using QuarterbackRating.Core.Services;
 using QuarterbackRating.ViewModels;
 using Windows.UI;
@@ -27,12 +28,7 @@ namespace QuarterbackRating.Views
             {
                 ErrorAlert.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(false, null, null, null);
 
-                ViewModel.Quarterback.Name = NameBox.Text;
-                ViewModel.Quarterback.PassAttempts = Int32.Parse(AttemptsBox.Text);
-                ViewModel.Quarterback.PassCompletions = Int32.Parse(CompletionsBox.Text);
-                ViewModel.Quarterback.PassingYards = Int32.Parse(YardsBox.Text);
-                ViewModel.Quarterback.Touchdowns = Int32.Parse(TouchdownsBox.Text);
-                ViewModel.Quarterback.Interceptions = Int32.Parse(InterceptionsBox.Text);
+                GenerateQuarterback();
 
                 var checkRating = ViewModel.Calculator.CalculateRating(ViewModel.Quarterback);
                 RatingBox.Foreground = new SolidColorBrush(Colors.LightGreen);
@@ -138,6 +134,25 @@ namespace QuarterbackRating.Views
             RatingBox.Foreground = originalColor;
             RatingBox.Text = "PENDING";
             RatingConfirmationBox.Text = "";
+        }
+
+        private void SaveButtonView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            GenerateQuarterback();
+            ViewModel.Repository.Create(ViewModel.Quarterback);
+            this.Frame.Navigate(typeof(QuarterbackPage));
+        }
+
+        private Quarterback GenerateQuarterback()
+        {
+            ViewModel.Quarterback.Name = NameBox.Text;
+            ViewModel.Quarterback.PassAttempts = Int32.Parse(AttemptsBox.Text);
+            ViewModel.Quarterback.PassCompletions = Int32.Parse(CompletionsBox.Text);
+            ViewModel.Quarterback.PassingYards = Int32.Parse(YardsBox.Text);
+            ViewModel.Quarterback.Touchdowns = Int32.Parse(TouchdownsBox.Text);
+            ViewModel.Quarterback.Interceptions = Int32.Parse(InterceptionsBox.Text);
+
+            return ViewModel.Quarterback;
         }
     }
 }

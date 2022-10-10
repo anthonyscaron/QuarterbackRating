@@ -161,7 +161,7 @@
                             </StackPanel>
                         </Grid>
                         <Grid HorizontalAlignment="Left" Margin="0,0,0,20">
-                            <GridView>
+                            <GridView x:Name="SaveButtonView" IsItemClickEnabled="True" ItemClick="SaveButtonView_ItemClick">
                                 <GridView.ItemContainerStyle>
                                     <Style TargetType="GridViewItem">
                                         <Setter Property="Template">
