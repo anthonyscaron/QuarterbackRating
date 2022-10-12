@@ -249,7 +249,6 @@ namespace QuarterbackRating.Views
 
         private void SaveButtonView_ItemClick(object sender, ItemClickEventArgs e)
         {
-            GenerateQuarterback();
             ViewModel.Repository.Create(ViewModel.Quarterback);
             this.Frame.Navigate(typeof(QuarterbackPage));
         }
