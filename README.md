@@ -3,7 +3,7 @@
 A C# Universal Windows application that calculates quarterback rating.
 
 User Input: 
-The user will need to input the following items:
+ The user will need to input the following items:
 1. Player name
 2. Passes attempted
 3. Passes completed
@@ -12,7 +12,7 @@ The user will need to input the following items:
 6. Number of interceptions
 
 Output: 
-Once the QB rating is calculated, display the rating in the following format:
+ Once the QB rating is calculated, display the rating in the following format:
  1. PLAYER NAME’s QB Rating is: RATING (Where PLAYER NAME is the name the user input and RATING is the one calculated)
 
 Additional Features:
