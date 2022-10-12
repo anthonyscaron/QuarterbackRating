@@ -16,6 +16,6 @@ Output:
  1. PLAYER NAME’s QB Rating is: RATING (Where PLAYER NAME is the name the user input and RATING is the one calculated)
 
 Additional Features:
-1. The user will be given the options to save the Quarterback's user entered information and calculated rating in a temporary memory database.
+1. The user will be given the option to save the user entered information and calculated rating in a temporary memory Quarterback database.
 2. Once saved, the user may view all preloaded and user added Quarterbacks from that session.
-3. If any information is incorrect (outside of data validation errors), the user may delete the Quarterback.
+3. If any information is incorrect (outside of data validation errors), the user may delete a Quarterback.
