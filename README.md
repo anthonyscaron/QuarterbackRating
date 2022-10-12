@@ -17,5 +17,5 @@ Output:
 
 Additional Features:
 1. The user will be given the options to save the Quarterback's user entered information and calculated rating in a temporary memory database.
-2. Once saved, the user may view all preloaded and user added Quarterbacks from that sessions.
+2. Once saved, the user may view all preloaded and user added Quarterbacks from that session.
 3. If any information is incorrect (outside of data validation errors), the user may delete the Quarterback.
