@@ -13,7 +13,7 @@ The user will need to input the following items:
 
 Output: 
 Once the QB rating is calculated, display the rating in the following format:
- 1. PLAYER NAME’s QB Rating is: RATING (Where PLAYER NAME is the name the user input and RATING is the one you calculated)
+ 1. PLAYER NAME’s QB Rating is: RATING (Where PLAYER NAME is the name the user input and RATING is the one calculated)
 
 Additional Features:
 1. The user will be given the options to save the Quarterback's user entered information and calculated rating in a temporary memory database.
