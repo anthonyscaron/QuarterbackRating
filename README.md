@@ -12,7 +12,7 @@ User Input:
 6. Number of interceptions
 
 Output: 
- Once the QB rating is calculated, display the rating in the following format:
+ Once the QB rating is calculated, the app will display the rating in the following format:
  1. PLAYER NAME’s QB Rating is: RATING (Where PLAYER NAME is the name the user input and RATING is the one calculated)
 
 Additional Features:
