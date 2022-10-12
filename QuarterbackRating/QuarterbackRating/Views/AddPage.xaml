@@ -37,7 +37,13 @@
                                 Visibility="Collapsed"
                                 Margin="0,0,0,20"
                                 VerticalAlignment="Center" >
-                            <TextBlock Foreground="Red" Style="{ThemeResource ListTitleStyle}" Text="Please Enter Valid Data" />
+                            <TextBlock Foreground="Red" Style="{ThemeResource ListTitleStyle}" Text="Please enter valid data:" />
+                            <TextBlock x:Name="NameError" Visibility="Collapsed" Foreground="Red" Style="{ThemeResource ListTitleStyle}" Text="" />
+                            <TextBlock x:Name="AttemptsError" Visibility="Collapsed" Foreground="Red" Style="{ThemeResource ListTitleStyle}" Text="" />
+                            <TextBlock x:Name="CompletionsError" Visibility="Collapsed" Foreground="Red" Style="{ThemeResource ListTitleStyle}" Text="" />
+                            <TextBlock x:Name="YardsError" Visibility="Collapsed" Foreground="Red" Style="{ThemeResource ListTitleStyle}" Text="" />
+                            <TextBlock x:Name="TouchdownsError" Visibility="Collapsed" Foreground="Red" Style="{ThemeResource ListTitleStyle}" Text="" />
+                            <TextBlock x:Name="InterceptionsError" Visibility="Collapsed" Foreground="Red" Style="{ThemeResource ListTitleStyle}" Text="" />
                         </StackPanel>
                         
                         <Grid VerticalAlignment="Center" HorizontalAlignment="Left">

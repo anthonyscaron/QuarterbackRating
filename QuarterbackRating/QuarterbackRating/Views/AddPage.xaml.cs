@@ -42,36 +42,67 @@ namespace QuarterbackRating.Views
 
         private bool UserInputValidation(string name, string attempts, string completions, string yards, string touchdowns, string interceptions)
         {
-            RatingBox.Foreground = new SolidColorBrush(Colors.White);
-            RatingBox.Text = "PENDING";
-
             var errorsExist = false;
 
             if (string.IsNullOrEmpty(name))
             {
                 errorsExist = true;
-                ErrorAlert.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(true, null, null, null);
                 NameBoxLabel.Foreground = new SolidColorBrush(Colors.Red);
+                NameError.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(true, null, null, null); ;
+                NameError.Text = "- Name cannot be blank";
             }
 
             var attemptsIsNumber = Int32.TryParse(attempts, out int attemptsResult);
-
             // attemptsResult < 1, Need one attempt.
             if (string.IsNullOrEmpty(attempts) || !attemptsIsNumber || attemptsResult < 1)
             {
                 errorsExist = true;
-                ErrorAlert.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(true, null, null, null);
                 AttemptsBoxLabel.Foreground = new SolidColorBrush(Colors.Red);
+
+                if (string.IsNullOrEmpty(attempts))
+                {
+                    AttemptsError.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(true, null, null, null);
+                    AttemptsError.Text = "- Pass Attempts cannot be blank";
+                }
+                else if (!attemptsIsNumber)
+                {
+                    AttemptsError.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(true, null, null, null);
+                    AttemptsError.Text = "- Pass Attempts must be a number";
+                }
+                else if (attemptsResult < 1)
+                {
+                    AttemptsError.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(true, null, null, null);
+                    AttemptsError.Text = "- Pass Attempts cannot be less than 1";
+                }
             }
 
             var completionsIsNumber = Int32.TryParse(completions, out int completionsResult);
-
             // completionsResult > attemptsResult, Can't have more completions than attempts.
             if (string.IsNullOrEmpty(completions) || !completionsIsNumber || completionsResult < 0 || completionsResult > attemptsResult)
             {
                 errorsExist = true;
-                ErrorAlert.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(true, null, null, null);
                 CompletionsBoxLabel.Foreground = new SolidColorBrush(Colors.Red);
+
+                if (string.IsNullOrEmpty(completions))
+                {
+                    CompletionsError.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(true, null, null, null);
+                    CompletionsError.Text = "- Pass Completions cannot be blank";
+                }
+                else if (!completionsIsNumber)
+                {
+                    CompletionsError.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(true, null, null, null);
+                    CompletionsError.Text = "- Pass Completions must be a number";
+                }
+                else if (completionsResult < 0)
+                {
+                    CompletionsError.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(true, null, null, null);
+                    CompletionsError.Text = "- Pass Completions cannot be less than 0";
+                }
+                else if (completionsResult > attemptsResult)
+                {
+                    CompletionsError.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(true, null, null, null);
+                    CompletionsError.Text = "- Pass Completions cannot be greater than attempts";
+                }
             }
 
             var yardsIsNumber = Int32.TryParse(yards, out int yardsResult);
@@ -83,7 +114,6 @@ namespace QuarterbackRating.Views
             if (string.IsNullOrEmpty(yards) || !yardsIsNumber || yardsResult < maxNegativeYards || yardsResult > maxPositiveYards)
             {
                 errorsExist = true;
-                ErrorAlert.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(true, null, null, null);
                 YardsBoxLabel.Foreground = new SolidColorBrush(Colors.Red);
             }
 
@@ -94,7 +124,6 @@ namespace QuarterbackRating.Views
             if (string.IsNullOrEmpty(touchdowns) || !touchdownsIsNumber || touchdownsResult < 0 || touchdownsResult > completionsResult || touchdownsResult > yardsResult)
             {
                 errorsExist = true;
-                ErrorAlert.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(true, null, null, null);
                 TouchdownsBoxLabel.Foreground = new SolidColorBrush(Colors.Red);
             }
 
@@ -105,8 +134,12 @@ namespace QuarterbackRating.Views
             if (string.IsNullOrEmpty(interceptions) || !interceptionsIsNumber || interceptionsResult < 0 || interceptionsResult > maxInterceptions)
             {
                 errorsExist = true;
-                ErrorAlert.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(true, null, null, null);
                 InterceptionsBoxLabel.Foreground = new SolidColorBrush(Colors.Red);
+            }
+
+            if (errorsExist)
+            {
+                ErrorAlert.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(true, null, null, null);
             }
 
             return errorsExist;
@@ -123,6 +156,19 @@ namespace QuarterbackRating.Views
         private void ResetFormStyle()
         {
             ErrorAlert.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(false, null, null, null);
+            NameError.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(false, null, null, null);
+            AttemptsError.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(false, null, null, null);
+            CompletionsError.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(false, null, null, null);
+            YardsError.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(false, null, null, null);
+            TouchdownsError.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(false, null, null, null);
+            InterceptionsError.Visibility = (Windows.UI.Xaml.Visibility)ViewModel.Converter.Convert(false, null, null, null);
+
+            NameError.Text = "";
+            AttemptsError.Text = "";
+            CompletionsError.Text = "";
+            YardsError.Text = "";
+            TouchdownsError.Text = "";
+            InterceptionsError.Text = "";
 
             var originalColor = new SolidColorBrush(Colors.White);
             NameBoxLabel.Foreground = originalColor;
