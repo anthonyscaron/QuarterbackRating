@@ -1,4 +1,4 @@
-# QuarterbackRating
+# Quarterback Rating Calculator
 
 A C# Universal Windows application that calculates quarterback rating.
 
