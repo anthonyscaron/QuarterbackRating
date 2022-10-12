@@ -165,9 +165,6 @@ C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Deb
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\QuarterbackRating.pdb
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\resources.pri
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\AppxManifest.xml
-C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Core\AppxManifest.xml
-C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Core\QuarterbackRating.exe
-C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\QuarterbackRating.build.appxrecipe
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Microsoft.Web.WebView2.Core.dll
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\ColorCode.Core.dll
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\ColorCode.Core.pdb
@@ -288,3 +285,6 @@ C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Deb
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424995200000000.json
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.winmd_637975105260000000.json
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\obj\x86\Debug\.winmd_cache\$Microsoft.Web.WebView2.Core.winmd_637920505780000000.json
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Core\AppxManifest.xml
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\Core\QuarterbackRating.exe
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating\bin\x86\Debug\QuarterbackRating.build.appxrecipe

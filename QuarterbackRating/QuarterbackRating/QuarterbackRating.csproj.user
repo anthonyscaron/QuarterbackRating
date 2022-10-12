@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>C:\Users\antho\Downloads\—Pngtree—american football line icon vector_5247830.png</Source>
+    <SmallTileSource>C:\Users\antho\Downloads\—Pngtree—american football line icon vector_5247830.png</SmallTileSource>
+    <MediumTileSource>C:\Users\antho\Downloads\—Pngtree—american football line icon vector_5247830.png</MediumTileSource>
+    <WideTileSource>C:\Users\antho\Downloads\—Pngtree—american football line icon vector_5247830.png</WideTileSource>
+    <LargeTileSource>C:\Users\antho\Downloads\—Pngtree—american football line icon vector_5247830.png</LargeTileSource>
+    <AppIconSource>C:\Users\antho\Downloads\—Pngtree—american football line icon vector_5247830.png</AppIconSource>
+    <SplashScreenSource>C:\Users\antho\Downloads\—Pngtree—american football line icon vector_5247830.png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\antho\Downloads\—Pngtree—american football line icon vector_5247830.png</PackageLogoSource>
+    <BadgeLogoSource>C:\Users\antho\Downloads\—Pngtree—american football line icon vector_5247830.png</BadgeLogoSource>
+  </PropertyGroup>
+</Project>

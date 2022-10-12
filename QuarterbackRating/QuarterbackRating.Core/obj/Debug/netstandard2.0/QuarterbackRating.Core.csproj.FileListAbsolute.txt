@@ -12,6 +12,7 @@ C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core\bin\De
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core\bin\Debug\netstandard2.0\QuarterbackRating.Core.dll
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core\bin\Debug\netstandard2.0\QuarterbackRating.Core.pdb
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core\bin\Debug\netstandard2.0\Windows.Foundation.UniversalApiContract.winmd
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core\obj\Debug\netstandard2.0\QuarterbackRating.Core.csproj.AssemblyReference.cache
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core\obj\Debug\netstandard2.0\QuarterbackRating.Core.GeneratedMSBuildEditorConfig.editorconfig
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core\obj\Debug\netstandard2.0\QuarterbackRating.Core.AssemblyInfoInputs.cache
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core\obj\Debug\netstandard2.0\QuarterbackRating.Core.AssemblyInfo.cs

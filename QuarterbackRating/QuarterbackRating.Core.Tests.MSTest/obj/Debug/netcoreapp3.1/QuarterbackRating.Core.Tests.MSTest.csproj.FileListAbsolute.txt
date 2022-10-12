@@ -3,11 +3,6 @@ C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating.Core.Tests.MSTest\obj
 C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating.Core.Tests.MSTest\obj\Debug\netcoreapp3.1\QuarterbackRating.Core.Tests.MSTest.AssemblyInfoInputs.cache
 C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating.Core.Tests.MSTest\obj\Debug\netcoreapp3.1\QuarterbackRating.Core.Tests.MSTest.AssemblyInfo.cs
 C:\Users\antho\Desktop\QuarterbackRating\QuarterbackRating.Core.Tests.MSTest\obj\Debug\netcoreapp3.1\QuarterbackRating.Core.Tests.MSTest.csproj.CoreCompileInputs.cache
-C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core.Tests.MSTest\obj\Debug\netcoreapp3.1\QuarterbackRating.Core.Tests.MSTest.csproj.AssemblyReference.cache
-C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core.Tests.MSTest\obj\Debug\netcoreapp3.1\QuarterbackRating.Core.Tests.MSTest.GeneratedMSBuildEditorConfig.editorconfig
-C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core.Tests.MSTest\obj\Debug\netcoreapp3.1\QuarterbackRating.Core.Tests.MSTest.AssemblyInfoInputs.cache
-C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core.Tests.MSTest\obj\Debug\netcoreapp3.1\QuarterbackRating.Core.Tests.MSTest.AssemblyInfo.cs
-C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core.Tests.MSTest\obj\Debug\netcoreapp3.1\QuarterbackRating.Core.Tests.MSTest.csproj.CoreCompileInputs.cache
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core.Tests.MSTest\bin\Debug\netcoreapp3.1\testhost.dll
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core.Tests.MSTest\bin\Debug\netcoreapp3.1\testhost.exe
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core.Tests.MSTest\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
@@ -99,6 +94,11 @@ C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core.Tests.
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core.Tests.MSTest\bin\Debug\netcoreapp3.1\QuarterbackRating.Core.dll
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core.Tests.MSTest\bin\Debug\netcoreapp3.1\Windows.Foundation.UniversalApiContract.winmd
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core.Tests.MSTest\bin\Debug\netcoreapp3.1\QuarterbackRating.Core.pdb
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core.Tests.MSTest\obj\Debug\netcoreapp3.1\QuarterbackRating.Core.Tests.MSTest.csproj.AssemblyReference.cache
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core.Tests.MSTest\obj\Debug\netcoreapp3.1\QuarterbackRating.Core.Tests.MSTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core.Tests.MSTest\obj\Debug\netcoreapp3.1\QuarterbackRating.Core.Tests.MSTest.AssemblyInfoInputs.cache
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core.Tests.MSTest\obj\Debug\netcoreapp3.1\QuarterbackRating.Core.Tests.MSTest.AssemblyInfo.cs
+C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core.Tests.MSTest\obj\Debug\netcoreapp3.1\QuarterbackRating.Core.Tests.MSTest.csproj.CoreCompileInputs.cache
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core.Tests.MSTest\obj\Debug\netcoreapp3.1\QuarterbackRating.Core.Tests.MSTest.csproj.CopyComplete
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core.Tests.MSTest\obj\Debug\netcoreapp3.1\QuarterbackRating.Core.Tests.MSTest.dll
 C:\GithubRepos\QuarterbackRating\QuarterbackRating\QuarterbackRating.Core.Tests.MSTest\obj\Debug\netcoreapp3.1\QuarterbackRating.Core.Tests.MSTest.pdb
